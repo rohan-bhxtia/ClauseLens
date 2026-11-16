@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": true, \"line\": \"The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so.\", \"page\": 2, \"clause_id\": \"C7\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1046,
+    "output_tokens": 68,
+    "thought_tokens": 0,
+    "latency_s": 1.564303958992241
+}

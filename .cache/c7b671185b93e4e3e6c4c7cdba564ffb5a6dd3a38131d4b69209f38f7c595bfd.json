@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": 22000, \"line\": \"Monthly rent is \\u20b922,000, payable in advance on or before the tenth day of each month.\", \"page\": 1, \"clause_id\": \"C4\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 974,
+    "output_tokens": 64,
+    "thought_tokens": 0,
+    "latency_s": 3.0848613340058364
+}

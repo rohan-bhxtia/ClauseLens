@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 1800, \"payer\": \"shared\"}, \"line\": \"Monthly common-area maintenance of \\u20b91,800 shall be shared equally: \\u20b9900 paid by the Landlord and \\u20b9900 paid by the Tenant.\", \"page\": 2, \"clause_id\": \"C12\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 998,
+    "output_tokens": 95,
+    "thought_tokens": 0,
+    "latency_s": 4.807016167003894
+}

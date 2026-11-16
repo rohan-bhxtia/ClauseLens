@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": true, \"line\": \"After the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice.\", \"page\": 2, \"clause_id\": \"C7\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1067,
+    "output_tokens": 52,
+    "thought_tokens": 0,
+    "latency_s": 2.9179616250039544
+}

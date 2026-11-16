@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": true, \"line\": \"Either Party may request termination by written notice.\", \"page\": 1, \"clause_id\": \"C8\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 945,
+    "output_tokens": 39,
+    "thought_tokens": 0,
+    "latency_s": 1.56996558298124
+}

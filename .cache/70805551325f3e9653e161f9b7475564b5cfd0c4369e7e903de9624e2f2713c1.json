@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": \"leave_and_licence\", \"line\": \"RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\", \"page\": 1, \"clause_id\": \"C0\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1022,
+    "output_tokens": 47,
+    "thought_tokens": 0,
+    "latency_s": 2.2140013329917565
+}

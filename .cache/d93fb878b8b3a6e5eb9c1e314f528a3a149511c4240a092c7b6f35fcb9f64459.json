@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 21, \"unit\": \"days\"}, \"line\": \"The Landlord shall refund the remaining deposit within twenty-one days after the Tenant vacates, returns all keys, and provides final utility readings.\", \"page\": 1, \"clause_id\": \"C6\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1001,
+    "output_tokens": 70,
+    "thought_tokens": 0,
+    "latency_s": 3.361789083981421
+}

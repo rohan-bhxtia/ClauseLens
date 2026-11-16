@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": true, \"line\": \"The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release.\", \"page\": 2, \"clause_id\": \"C9\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1008,
+    "output_tokens": 64,
+    "thought_tokens": 0,
+    "latency_s": 1.6464677499898244
+}

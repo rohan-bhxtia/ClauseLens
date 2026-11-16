@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"A party has ten days to remedy a material breach if it can reasonably be cured.\", \"citations\": [{\"clause_id\": \"C9\", \"line\": \"Either Party may give written notice of a material breach and allow ten days to remedy it where the breach can reasonably be cured.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 712,
+    "output_tokens": 68,
+    "thought_tokens": 0,
+    "latency_s": 1.3963876250199974
+}

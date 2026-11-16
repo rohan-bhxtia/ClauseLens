@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": false, \"line\": \"Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.\", \"page\": 1, \"clause_id\": \"C3\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 954,
+    "output_tokens": 53,
+    "thought_tokens": 0,
+    "latency_s": 2.4378422090085223
+}

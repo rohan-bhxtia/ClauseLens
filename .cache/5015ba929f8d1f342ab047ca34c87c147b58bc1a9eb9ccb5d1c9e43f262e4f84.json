@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"The monthly common-area maintenance fee of \u20b91,800 is split equally, with both the landlord and the tenant each paying \u20b9900.\", \"citations\": [{\"clause_id\": \"C12\", \"line\": \"Monthly common-area maintenance of \u20b91,800 shall be shared equally: \u20b9900 paid by the Landlord and \u20b9900 paid by the Tenant.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 713,
+    "output_tokens": 95,
+    "thought_tokens": 0,
+    "latency_s": 2.74535020798794
+}

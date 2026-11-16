@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"The Landlord is responsible for paying the property tax.\", \"citations\": [{\"clause_id\": \"C9\", \"line\": \"The Landlord shall pay property tax and building-owner assessments.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 682,
+    "output_tokens": 50,
+    "thought_tokens": 0,
+    "latency_s": 1.3265572920208797
+}

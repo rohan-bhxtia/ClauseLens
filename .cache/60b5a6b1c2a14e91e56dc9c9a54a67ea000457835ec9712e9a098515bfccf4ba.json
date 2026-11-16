@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": 28500, \"line\": \"The Tenant shall pay \u20b928,500 per month in advance on or before the seventh day of each month.\", \"page\": 1, \"clause_id\": \"C4\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 905,
+    "output_tokens": 60,
+    "thought_tokens": 0,
+    "latency_s": 3.623396333976416
+}

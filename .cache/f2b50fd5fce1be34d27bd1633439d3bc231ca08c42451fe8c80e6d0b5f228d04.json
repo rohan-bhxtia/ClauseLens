@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": 30000, \"line\": \"Monthly rent is \\u20b930,000, payable on or before the fifth day of each month.\", \"page\": 1, \"clause_id\": \"C4\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 921,
+    "output_tokens": 62,
+    "thought_tokens": 0,
+    "latency_s": 2.785109416989144
+}

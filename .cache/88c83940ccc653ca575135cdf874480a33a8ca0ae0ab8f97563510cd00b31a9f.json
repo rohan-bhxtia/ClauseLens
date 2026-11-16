@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 2000, \"payer\": \"landlord\"}, \"line\": \"Monthly building maintenance of \\u20b92,000 shall be paid by the Landlord.\", \"page\": 2, \"clause_id\": \"C8\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1116,
+    "output_tokens": 67,
+    "thought_tokens": 0,
+    "latency_s": 2.6874742090003565
+}

@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"The tenant is prohibited from subletting or assigning the agreement unless they first obtain written consent from the landlord.\", \"citations\": [{\"clause_id\": \"C12\", \"line\": \"The Tenant may not sublet or assign the Agreement without prior written consent.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 686,
+    "output_tokens": 63,
+    "thought_tokens": 0,
+    "latency_s": 0.8337570409930777
+}

@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"The Occupant is responsible for paying the monthly society service charge, which is \u20b92,500.\", \"citations\": [{\"clause_id\": \"C10\", \"line\": \"A monthly society service charge of \\u20b92,500 is payable by the Occupant in addition to the monthly fee.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 771,
+    "output_tokens": 79,
+    "thought_tokens": 0,
+    "latency_s": 0.8522624589968473
+}

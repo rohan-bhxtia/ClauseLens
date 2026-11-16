@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": 25000, \"line\": \"The Tenant shall pay monthly rent of \u20b925,000 (Rupees Twenty-Five Thousand only), in advance, on or before the fifth calendar day of each month.\", \"page\": 1, \"clause_id\": \"C4\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 965,
+    "output_tokens": 72,
+    "thought_tokens": 0,
+    "latency_s": 3.2398214999993797
+}

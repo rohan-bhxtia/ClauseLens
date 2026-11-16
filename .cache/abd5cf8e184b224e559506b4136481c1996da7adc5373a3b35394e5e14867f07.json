@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"percent\": 8, \"when\": \"every_year\"}, \"line\": \"On each anniversary of the commencement date, the monthly fee increases by eight percent over the amount payable immediately before that anniversary.\", \"page\": 2, \"clause_id\": \"C8\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1141,
+    "output_tokens": 66,
+    "thought_tokens": 0,
+    "latency_s": 2.759787332994165
+}

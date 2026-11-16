@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"The tenant is responsible for paying the electricity and water charges incurred during their period of occupation.\", \"citations\": [{\"clause_id\": \"C8\", \"line\": \"The Tenant shall pay electricity, piped gas, internet, and water charges measured or billed for the period of occupation.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 773,
+    "output_tokens": 67,
+    "thought_tokens": 0,
+    "latency_s": 2.9384187500108965
+}

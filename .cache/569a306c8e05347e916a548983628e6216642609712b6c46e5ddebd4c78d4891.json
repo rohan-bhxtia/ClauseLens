@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"unclear\", \"answer\": null, \"line\": \"Clause 7A: The Landlord may terminate this Agreement for convenience by giving sixty days' written notice. Clause 7B: Notwithstanding Clause 7A, the Landlord may terminate this Agreement for convenience only by giving ninety days' written notice.\", \"page\": 1, \"clause_id\": \"C8\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 977,
+    "output_tokens": 82,
+    "thought_tokens": 0,
+    "latency_s": 3.349506291997386
+}

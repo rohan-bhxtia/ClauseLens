@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": 192000, \"line\": \"The Occupant shall pay a refundable, interest-free security deposit of \u20b91,92,000, equal to six months of the monthly fee, before receiving keys.\", \"page\": 1, \"clause_id\": \"C5\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1059,
+    "output_tokens": 73,
+    "thought_tokens": 0,
+    "latency_s": 4.848431749996962
+}

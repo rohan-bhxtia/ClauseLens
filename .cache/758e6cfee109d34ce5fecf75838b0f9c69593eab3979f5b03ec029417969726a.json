@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"Yes, guests are permitted to stay temporarily, provided they follow building rules and do not become permanent occupants without written approval.\", \"citations\": [{\"clause_id\": \"C12\", \"line\": \"Guests may stay temporarily, provided they comply with building rules and do not become permanent occupants without written approval.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 733,
+    "output_tokens": 72,
+    "thought_tokens": 0,
+    "latency_s": 1.029550666018622
+}

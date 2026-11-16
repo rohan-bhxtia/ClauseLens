@@ -1,0 +1,8 @@
+{
+    "text": "{\"is_residential_lease\": true, \"reason\": \"The document is explicitly titled 'RESIDENTIAL RENTAL AGREEMENT' and contains standard residential tenancy terms such as monthly rent for an apartment, a security deposit, and clauses regarding residential use and maintenance.\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 974,
+    "output_tokens": 53,
+    "thought_tokens": 0,
+    "latency_s": 1.4583015409880318
+}

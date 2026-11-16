@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 60, \"unit\": \"days\"}, \"line\": \"The Tenant may request early termination by giving sixty days' written notice, but Clause 5 states that automatic renewal occurs unless the Landlord gives timely non-renewal notice.\", \"page\": 1, \"clause_id\": \"C7\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1047,
+    "output_tokens": 75,
+    "thought_tokens": 0,
+    "latency_s": 2.105409290990792
+}

@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": null, \"line\": \"The Agreement does not state a fixed number of days within which the deposit must be refunded.\", \"page\": 1, \"clause_id\": \"C6\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1010,
+    "output_tokens": 48,
+    "thought_tokens": 0,
+    "latency_s": 1.0977577500161715
+}

@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 11, \"unit\": \"months\"}, \"line\": \"The tenancy begins on 1 November 2026 for an initial term of eleven months, ending on 30 September 2027.\", \"page\": 1, \"clause_id\": \"C3\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1027,
+    "output_tokens": 73,
+    "thought_tokens": 0,
+    "latency_s": 3.4815147499903105
+}

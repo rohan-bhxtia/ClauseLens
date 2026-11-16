@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": true, \"line\": \"The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord.\", \"page\": 1, \"clause_id\": \"C7\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 906,
+    "output_tokens": 51,
+    "thought_tokens": 0,
+    "latency_s": 5.867418124980759
+}

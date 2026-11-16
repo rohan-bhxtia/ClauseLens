@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"not_stated\", \"answer\": null, \"line\": null, \"page\": null, \"clause_id\": null}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1055,
+    "output_tokens": 30,
+    "thought_tokens": 0,
+    "latency_s": 12.131205540994415
+}

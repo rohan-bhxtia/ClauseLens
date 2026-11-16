@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 15, \"unit\": \"days\"}, \"line\": \"Within fifteen calendar days after the Tenant returns vacant possession and all keys, the Landlord shall refund the balance of the deposit.\", \"page\": 1, \"clause_id\": \"C6\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1142,
+    "output_tokens": 66,
+    "thought_tokens": 0,
+    "latency_s": 2.8619731250219047
+}

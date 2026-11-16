@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 2500, \"payer\": \"tenant\"}, \"line\": \"A monthly society service charge of \\u20b92,500 is payable by the Occupant in addition to the monthly fee.\", \"page\": 2, \"clause_id\": \"C10\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1063,
+    "output_tokens": 74,
+    "thought_tokens": 0,
+    "latency_s": 2.9492484999937005
+}

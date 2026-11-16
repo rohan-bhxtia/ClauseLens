@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"Any changes to the agreement must be documented in writing and signed by both the Landlord and the Tenant.\", \"citations\": [{\"clause_id\": \"C16\", \"line\": \"Any amendment must be in writing and signed by both Parties.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 711,
+    "output_tokens": 60,
+    "thought_tokens": 0,
+    "latency_s": 1.1704300419951323
+}

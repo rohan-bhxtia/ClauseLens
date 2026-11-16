@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 30, \"unit\": \"days\"}, \"line\": \"Clause 6A: The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord.\", \"page\": 1, \"clause_id\": \"C7\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1044,
+    "output_tokens": 67,
+    "thought_tokens": 0,
+    "latency_s": 3.207295416999841
+}

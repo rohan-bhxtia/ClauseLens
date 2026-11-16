@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 90, \"unit\": \"days\"}, \"line\": \"At the end of the initial term, this Agreement automatically renews for successive twelve-month periods unless the Landlord gives written notice of non-renewal at least ninety days before the end of the current term.\", \"page\": 1, \"clause_id\": \"C6\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1056,
+    "output_tokens": 83,
+    "thought_tokens": 0,
+    "latency_s": 3.137978666985873
+}

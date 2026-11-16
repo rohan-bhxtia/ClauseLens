@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"The lock-in period is eighteen months.\", \"citations\": [{\"clause_id\": \"C3\", \"line\": \"The first eighteen months are a lock-in period binding on both parties.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 823,
+    "output_tokens": 50,
+    "thought_tokens": 0,
+    "latency_s": 2.070895915996516
+}

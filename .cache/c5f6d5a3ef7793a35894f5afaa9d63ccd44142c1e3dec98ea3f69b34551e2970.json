@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": false, \"line\": \"Renewal requires written agreement.\", \"page\": 1, \"clause_id\": \"C3\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 915,
+    "output_tokens": 35,
+    "thought_tokens": 0,
+    "latency_s": 2.235767042002408
+}

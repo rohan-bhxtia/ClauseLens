@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": false}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 827,
+    "output_tokens": 5,
+    "thought_tokens": 0,
+    "latency_s": 1.0032487499993294
+}

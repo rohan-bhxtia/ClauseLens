@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"percent\": 6, \"when\": \"on_renewal\"}, \"line\": \"If the Parties sign a renewal, rent shall increase by six percent from the first day of the renewed term unless they agree in writing to another amount.\", \"page\": 2, \"clause_id\": \"C10\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 993,
+    "output_tokens": 73,
+    "thought_tokens": 0,
+    "latency_s": 2.35746483298135
+}

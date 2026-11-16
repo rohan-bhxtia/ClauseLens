@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"percent\": 5, \"when\": \"conditional\"}, \"line\": \"The monthly rent may increase by five percent if the building's annual maintenance costs rise by more than ten percent, provided the Landlord gives the Tenant copies of the relevant society records.\", \"page\": 1, \"clause_id\": \"C7\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1038,
+    "output_tokens": 77,
+    "thought_tokens": 0,
+    "latency_s": 3.0758582500275224
+}

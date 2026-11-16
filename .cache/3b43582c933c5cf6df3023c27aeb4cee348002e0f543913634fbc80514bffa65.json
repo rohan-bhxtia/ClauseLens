@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 30, \"unit\": \"days\"}, \"line\": \"Within thirty calendar days after vacant possession, return of keys, and settlement of known charges, the Owner shall provide a written account of deductions and refund the undisputed balance.\", \"page\": 1, \"clause_id\": \"C6\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1187,
+    "output_tokens": 74,
+    "thought_tokens": 0,
+    "latency_s": 2.6302615420136135
+}

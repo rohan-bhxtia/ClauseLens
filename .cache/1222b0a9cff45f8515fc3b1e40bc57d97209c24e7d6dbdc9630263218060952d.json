@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": true, \"line\": \"If the Tenant leaves before the end of the term without written agreement, the Landlord may claim reasonable documented losses permitted by applicable law.\", \"page\": 2, \"clause_id\": \"C9\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 918,
+    "output_tokens": 57,
+    "thought_tokens": 0,
+    "latency_s": 5.6789875000249594
+}

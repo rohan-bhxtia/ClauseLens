@@ -1,0 +1,8 @@
+{
+    "text": "{\"is_residential_lease\": true, \"reason\": \"The document is explicitly titled 'RESIDENTIAL RENTAL AGREEMENT', identifies the parties as 'Landlord' and 'Tenant', specifies 'residential use' for the premises, and includes standard residential terms such as monthly rent, security deposit, and tenancy duration.\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 952,
+    "output_tokens": 65,
+    "thought_tokens": 0,
+    "latency_s": 2.25643537499127
+}

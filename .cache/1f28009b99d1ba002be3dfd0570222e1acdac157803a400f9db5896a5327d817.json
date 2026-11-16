@@ -1,0 +1,8 @@
+{
+    "text": "{\n  \"found\": true,\n  \"answer\": \"The landlord must provide at least 24 hours' notice before inspecting the premises, except in cases of emergency.\",\n  \"citations\": [\n    {\n      \"clause_id\": \"C11\",\n      \"line\": \"The Landlord may inspect the Premises after giving at least twenty-four hours' notice and arranging a mutually reasonable time, except in an emergency involving immediate risk to persons or property.\"\n    }\n  ]\n}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 833,
+    "output_tokens": 108,
+    "thought_tokens": 0,
+    "latency_s": 1.1457129159825854
+}

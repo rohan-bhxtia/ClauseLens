@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": 85500, \"line\": \"The Tenant shall pay \\u20b985,500 as a refundable, interest-free security deposit, equal to three months of rent.\", \"page\": 1, \"clause_id\": \"C5\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 913,
+    "output_tokens": 68,
+    "thought_tokens": 0,
+    "latency_s": 3.3042716249765363
+}

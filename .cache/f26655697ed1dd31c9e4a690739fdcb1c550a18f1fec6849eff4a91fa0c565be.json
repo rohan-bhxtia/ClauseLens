@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 60, \"unit\": \"days\"}, \"line\": \"Either Party may terminate this Agreement by giving sixty days' written notice.\", \"page\": 2, \"clause_id\": \"C9\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1129,
+    "output_tokens": 55,
+    "thought_tokens": 0,
+    "latency_s": 3.456689709011698
+}

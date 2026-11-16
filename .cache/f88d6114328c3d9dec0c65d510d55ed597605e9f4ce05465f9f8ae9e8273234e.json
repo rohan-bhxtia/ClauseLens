@@ -1,0 +1,8 @@
+{
+    "text": "{\"found\": true, \"answer\": \"The tenant can only sublet the premises if they obtain prior written consent from the landlord.\", \"citations\": [{\"clause_id\": \"C12\", \"line\": \"The Tenant shall not make structural alterations, change locks without providing a working emergency key, assign the Agreement, or sublet the Premises without the Landlord's prior written consent.\"}]}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 847,
+    "output_tokens": 81,
+    "thought_tokens": 0,
+    "latency_s": 1.552424790977966
+}

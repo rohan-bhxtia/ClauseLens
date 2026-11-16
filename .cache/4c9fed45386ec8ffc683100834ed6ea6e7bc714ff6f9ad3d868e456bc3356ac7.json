@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"amount\": 12, \"unit\": \"months\"}, \"line\": \"The tenancy commences on 1 November 2026 and ends on 31 October 2027.\", \"page\": 1, \"clause_id\": \"C3\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 986,
+    "output_tokens": 66,
+    "thought_tokens": 0,
+    "latency_s": 4.378180750005413
+}

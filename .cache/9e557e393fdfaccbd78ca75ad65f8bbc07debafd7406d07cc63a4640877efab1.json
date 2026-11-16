@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": 66000, \"line\": \"The Tenant shall pay a refundable security deposit of \u20b966,000, equal to three months of the stated monthly rent.\", \"page\": 1, \"clause_id\": \"C5\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 921,
+    "output_tokens": 62,
+    "thought_tokens": 0,
+    "latency_s": 3.6335712499858346
+}

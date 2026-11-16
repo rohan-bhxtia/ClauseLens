@@ -1,0 +1,8 @@
+{
+    "text": "{\"status\": \"found\", \"answer\": {\"percent\": 7, \"when\": \"on_renewal\"}, \"line\": \"On each renewal anniversary, monthly rent increases by seven percent over the rent payable immediately before renewal.\", \"page\": 1, \"clause_id\": \"C8\"}",
+    "model": "gemini-3.1-flash-lite",
+    "input_tokens": 1015,
+    "output_tokens": 61,
+    "thought_tokens": 0,
+    "latency_s": 2.0436179579992313
+}
