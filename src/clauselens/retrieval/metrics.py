@@ -7,8 +7,6 @@
 # Lock-in period	         True	True	True
 
 
-"""Retrieval scoring rules: which clause is right, and did search find it."""
-
 from collections.abc import Sequence
 
 from clauselens.schemas.clause import Clause_format
@@ -16,8 +14,10 @@ from clauselens.ingest.parser import normalize
 
 
 def gold_clause_indexes(
-    clauses: Sequence[Clause_format], line: str, page: int
-) -> set[int]:
+    clauses: Sequence[Clause_format],
+    line: str, 
+    page: int
+    ) -> set[int]:
     """Find clause positions containing the gold line on the given page."""
 
     needle = normalize(line)
@@ -29,7 +29,11 @@ def gold_clause_indexes(
     }
 
 
-def hit_at_k(ranked: list[int], gold: set[int], k: int) -> bool:
+def hit_at_k(
+        ranked: list[int], 
+        gold: set[int], 
+        k: int
+        ) -> bool:
     """Check whether any gold clause appears in the top K results."""
 
     if k < 1:
