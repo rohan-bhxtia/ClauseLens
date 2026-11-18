@@ -30,7 +30,7 @@ def gold_clause_indexes(
 
 
 def hit_at_k(
-        ranked: list[int], 
+        ranked: list[int],   # this will come from tfidf 
         gold: set[int], 
         k: int
         ) -> bool:
