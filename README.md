@@ -8,7 +8,7 @@ Upload an Indian rental agreement (PDF). ClauseLens extracts key terms (rent, de
 
 ## Status
 
-🚧 In progress. **Day 3 of 10 done. Day 4 is next.**
+🚧 In progress. **Day 4 of 10 done. Day 5 is next.**
 
 Working so far:
 - 15 key lease questions defined, with hand-checked answers for 5 test leases
@@ -20,6 +20,7 @@ Working so far:
 - JSON response cache to avoid repeating identical Gemini requests
 - Router unit tests using mocked Gemini responses
 - Manual integration checks against the real Gemini API
+- Clause retrieval: Hit@3 100% on 55 gold lines, 5 synthetic leases (dense embeddings, question + keywords)
 
 ## Next
 

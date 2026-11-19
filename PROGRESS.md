@@ -120,7 +120,7 @@ Decisions:
 
 Build days used: 3 of 13
 
-## Day 4 — DONE (2026-11-04 → 2026-11-20): Clause Retrieval
+## Day 4 — DONE (2026-11-17 → 2026-11-20): Clause Retrieval
 
 Built:
 - `src/clauselens/retrieval/questions.py` — retrieval questions for the 15 lease facts, with keywords
@@ -135,12 +135,14 @@ Built:
 - `scripts/try_embeddings.py` — quick manual check of the embedding model (renamed from `test_embeddings.py` so pytest doesn't collect it)
 - Tests for questions, gold-clause matching, metrics, TF-IDF and embeddings (lease isolation, unknown lease, invalid k)
 
-Results (55 question–lease pairs):
+Results (55 question–lease pairs, 5 synthetic leases):
 
-| Method | Hit@1 | Hit@3 | Hit@5 |
-|---|---|---|---|
-| Embeddings, question only | 74.5% | 96.4% | 98.2% |
-| Embeddings, question + keywords | 80.0% | 100.0% | 100.0% |
+| Method | Query | Hit@1 | Hit@3 | Hit@5 |
+|---|---|---|---|---|
+| TF-IDF | question only | 69.1% (38/55) | 83.6% (46/55) | 90.9% (50/55) |
+| TF-IDF | + keywords | 76.4% (42/55) | 92.7% (51/55) | 92.7% (51/55) |
+| Dense (Chroma) | question only | 74.5% (41/55) | 96.4% (53/55) | 98.2% (54/55) |
+| Dense (Chroma) | + keywords | 80.0% (44/55) | 100% (55/55) | 100% (55/55) |
 
 Test results:
 - 60 passed
@@ -153,9 +155,14 @@ Found:
 - Question-only misses were in lease_02 (agreement_type, rent_increase); adding keywords fixed both
 
 Decisions:
-- Use question + keywords for retrieval; top 3 clauses go to extraction on Day 5
-- Keep TF-IDF as a baseline for comparison
-- Local embedding model, no API cost
+- No BM25 + RRF and no reranker: dense hit@3 is 96.4% (question only) and 100% (with keywords), above the ~90% threshold. Revisit if real, messier leases are added.
+- Chroma instead of Qdrant, and sentence-transformers (all-MiniLM-L6-v2) instead of FastEmbed: chosen for familiarity and schedule. This deviates from the original stack; swapping is one file because the interface is `search(lease_id, query, k)`.
+
+Known gaps:
+- Only 55 pairs on 5 synthetic, clean-style leases: results are indicative, not general.
+- Keywords were written before measuring, but the misses were read afterwards. More keyword tuning on these same 55 would overfit.
+- agreement_type has more than one valid evidence clause (the title clause also says it); the metric counts only the gold clause.
+- TF-IDF with a query that matches nothing returns clauses in original order, which means nothing.
 
 Build days used: 4 of 13
 
