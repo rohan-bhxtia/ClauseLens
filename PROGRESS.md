@@ -120,18 +120,46 @@ Decisions:
 
 Build days used: 3 of 13
 
-## Day 4 — NEXT: Clause Retrieval
+## Day 4 — DONE (2026-11-04 → 2026-11-20): Clause Retrieval
 
-Goal: Find the most relevant clauses for a given lease question and measure retrieval accuracy.
+Built:
+- `src/clauselens/retrieval/questions.py` — retrieval questions for the 15 lease facts, with keywords
+- `src/clauselens/retrieval/metrics.py` — gold-clause matching and Hit@k rules
+- `src/clauselens/retrieval/tfidf.py` — TF-IDF baseline retriever with per-lease filtering
+- `src/clauselens/retrieval/embeddings.py` — `EmbeddingRetriever`:
+  - Embeds clauses with `sentence-transformers/all-MiniLM-L6-v2`
+  - Stores them in a Chroma vector DB (cosine distance) with lease_id, clause index, number, title and page
+  - Rebuilds the `lease_clauses` collection on each run so stale clauses never leak into results
+  - Searches only within the requested lease; rejects unknown lease_ids and k < 1
+- `eval/run_retrieval.py` — measures Hit@1/3/5 against the gold evidence and prints every miss
+- `scripts/try_embeddings.py` — quick manual check of the embedding model (renamed from `test_embeddings.py` so pytest doesn't collect it)
+- Tests for questions, gold-clause matching, metrics, TF-IDF and embeddings (lease isolation, unknown lease, invalid k)
 
-Planned:
-- Define retrieval questions using the existing 15 lease facts
-- Build a simple clause retrieval baseline
-- Retrieve candidate clauses for each question
-- Compare retrieved clauses against the verified gold evidence
-- Measure retrieval accuracy before adding more complex retrieval methods
+Results (55 question–lease pairs):
 
-## Day 5 — Structured Fact Extraction
+| Method | Hit@1 | Hit@3 | Hit@5 |
+|---|---|---|---|
+| Embeddings, question only | 74.5% | 96.4% | 98.2% |
+| Embeddings, question + keywords | 80.0% | 100.0% | 100.0% |
+
+Test results:
+- 60 passed
+- Warnings are deprecation notices from Docling/Pydantic dependencies
+
+Found:
+- Reusing an existing Chroma collection kept old clauses around → delete and recreate it on every build
+- Chroma rejects `None` metadata values → untitled clauses store `""` as title
+- A file named `scripts/test_*.py` gets picked up by pytest → renamed to `try_embeddings.py`
+- Question-only misses were in lease_02 (agreement_type, rent_increase); adding keywords fixed both
+
+Decisions:
+- Use question + keywords for retrieval; top 3 clauses go to extraction on Day 5
+- Keep TF-IDF as a baseline for comparison
+- Local embedding model, no API cost
+
+Build days used: 4 of 13
+
+## Day 5 — NEXT: Structured Fact Extraction
 
 Goal: Use Gemini to extract the 15 lease facts from relevant clauses.
 
@@ -158,4 +186,4 @@ Days 11–13 — Buffer, catch-up and lease comparison.
 
 ---
 
-**Current milestone:** PDF ingestion and Gemini Router are complete. Next is clause retrieval and its accuracy measurement, followed by structured fact extraction.
+**Current milestone:** PDF ingestion, Gemini Router and clause retrieval (Hit@3 = 100%) are complete. Next is structured fact extraction.

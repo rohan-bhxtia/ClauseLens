@@ -26,10 +26,15 @@ class EmbeddingRetriever:
         
 
         # Create or access the collection.
-        self._collection = self._client.get_or_create_collection(
+        try:
+           self._client.delete_collection(name="lease_clauses")
+        except chromadb.errors.NotFoundError:
+           pass
+
+        self._collection = self._client.create_collection(
             name="lease_clauses",
             metadata={"hnsw:space": "cosine"},
-        )
+)
 
         self._rows = {}
 
@@ -55,7 +60,7 @@ class EmbeddingRetriever:
                     "lease_id": lease_id,
                     "clause_index": index,
                     "number": clause.number or "",
-                    "title": clause.title,
+                    "title": clause.title or "",
                     "page": clause.page,
                 })
 
