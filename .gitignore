@@ -7,3 +7,5 @@ __pycache__/
 scratch/
 .DS_Store
 learning/
+.cache/
+chroma_db/
