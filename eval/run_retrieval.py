@@ -1,5 +1,5 @@
 
-"""Measure TF-IDF retrieval: hit@1/3/5 on every gold line."""
+"""Measure dense embedding retrieval: hit@1/3/5 on every gold line."""
 
 import json
 from pathlib import Path
@@ -8,10 +8,10 @@ from clauselens.ingest.chunker import groupBlocks_toClauses
 from clauselens.ingest.parser import parse_pdf
 from clauselens.retrieval.metrics import gold_clause_indexes, hit_at_k
 from clauselens.retrieval.questions import QUESTIONS
-from clauselens.retrieval.tfidf import TfidfRetriever
+from clauselens.retrieval.embeddings import EmbeddingRetriever
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 KS = (1, 3, 5)
 
 
@@ -87,7 +87,7 @@ def build_query(question, use_keywords: bool) -> str:
 
 
 # FUNCTION 4:
-# Evaluates TF-IDF retrieval against the gold evidence lines.
+# Evaluates dense embedding retrieval against the gold evidence lines.
 # For every gold entry:
 # 1. Finds its corresponding predefined question.
 # 2. Builds the search query.
@@ -222,7 +222,7 @@ def print_results(name: str, hits: dict, total: int, misses: list):
 # FUNCTION 6:
 # Main controller of the entire evaluation script.
 # 1. Loads all five leases.
-# 2. Creates the TF-IDF retriever.
+# 2. Creates the dense embedding retriever.
 # 3. Runs evaluation using question-only queries.
 # 4. Runs evaluation using question + keywords.
 # 5. Checks that exactly 55 gold entries were evaluated.
@@ -233,9 +233,9 @@ def main() -> None:
 
     leases = load_leases()
 
-    print("\nBuilding TF-IDF retriever...")
+    print("\nBuilding dense embedding retriever...")
 
-    retriever = TfidfRetriever(leases)
+    retriever = EmbeddingRetriever(leases)
 
     # Experiment 1: Question text only.
     print("\nEvaluating question-only queries...")
@@ -264,14 +264,14 @@ def main() -> None:
 
     # Display both experiment results.
     print_results(
-        "QUESTION TEXT ONLY",
+        "DENSE EMBEDDINGS: QUESTION TEXT ONLY",
         hits_without,
         total_without,
         misses_without,
     )
 
     print_results(
-        "QUESTION TEXT + KEYWORDS",
+        "DENSE EMBEDDINGS: QUESTION TEXT + KEYWORDS",
         hits_with,
         total_with,
         misses_with,
