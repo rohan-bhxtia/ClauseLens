@@ -9,13 +9,16 @@ class ResponseCache:
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
 
-    def make_key(self, model, prompt, system_instruction=None):
+    def make_key(self, model, prompt, system_instruction=None, response_schema=None):
 
         request_data = {
             "model": model,
             "prompt": prompt,
             "system_instruction": system_instruction,
         }
+
+        if response_schema is not None:
+            request_data["response_schema"]= response_schema
 
         request_string = json.dumps(request_data, sort_keys=True)
 

@@ -57,15 +57,25 @@ def call_gemini(
     client: genai.Client,
     model: str,
     prompt: str,
-    system_instruction: str | None = None,) -> LLMResult:
+    system_instruction: str | None = None,
+    response_schema: dict | None =  None,
+    ) -> LLMResult:
     """Send one prompt to Gemini and return the result."""
+
+    config_args = {}
+
+    if system_instruction is not None:
+        config_args["system_instruction"]= system_instruction
+
+    if response_schema is not None:
+        config_args["response_mime_type"] = "application/json"
+        config_args["response_json_schema"] = response_schema    
 
     request_args = {}
 
-    if system_instruction is not None:
-        request_args["config"] = types.GenerateContentConfig(
-            system_instruction=system_instruction
-        )
+    if config_args:
+        request_args["config"] = types.GenerateContentConfig(**config_args)
+
 
     start_time = time.perf_counter()
 
@@ -116,11 +126,17 @@ def call_gemini(
 # ---------------------------------------------------------------------------
 
 def call_with_retry(
-        client, settings, model, prompt, cache, system_instruction=None
+        client,
+        settings, 
+        model, 
+        prompt, 
+        cache, 
+        system_instruction = None,
+        response_schema = None,
 ):
     """Check cache first, then call Gemini with retries if needed."""
 
-    key = cache.make_key(model, prompt, system_instruction)
+    key = cache.make_key(model, prompt, system_instruction,response_schema)
 
     cached_data = cache.get(key)
 
@@ -137,6 +153,7 @@ def call_with_retry(
                 model,
                 prompt,
                 system_instruction,
+                response_schema,
             )
 
             cache.put(key, asdict(result))
@@ -174,7 +191,7 @@ def _should_fall_back(exc):
     return exc.code == 404 or exc.code in RETRYABLE_CODES
 
 
-def call_with_fallback(client, settings, prompt, cache, system_instruction=None):
+def call_with_fallback(client, settings, prompt, cache, system_instruction=None, response_schema = None):
     """Try the primary model first, then use the backup when appropriate."""
 
     try:
@@ -187,6 +204,7 @@ def call_with_fallback(client, settings, prompt, cache, system_instruction=None)
             prompt,
             cache,
             system_instruction,
+            response_schema,
         )
 
     except errors.APIError as exc:
@@ -211,4 +229,5 @@ def call_with_fallback(client, settings, prompt, cache, system_instruction=None)
             prompt,
             cache,
             system_instruction,
+            response_schema,
         )

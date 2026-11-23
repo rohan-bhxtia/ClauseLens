@@ -1,4 +1,3 @@
-
 from types import SimpleNamespace
 
 import pytest
@@ -16,8 +15,8 @@ class FakeCache:
     def __init__(self):
         self.data = {}
 
-    def make_key(self, model, prompt, system_instruction):
-        return f"{model}:{prompt}:{system_instruction}"
+    def make_key(self, model, prompt, system_instruction, response_schema=None):
+        return f"{model}:{prompt}:{system_instruction}:{response_schema}"
 
     def get(self, key):
         return self.data.get(key)
@@ -132,7 +131,7 @@ def test_fallback_to_backup_model(monkeypatch, settings, cache, result):
 
     calls = []
 
-    def fake_call(client, model, prompt, system_instruction):
+    def fake_call(client, model, prompt, system_instruction, response_schema=None):
         calls.append(model)
 
         if model == "primary-model":
@@ -157,7 +156,7 @@ def test_fallback_preserves_system_instruction(
 
     calls = []
 
-    def fake_call(client, model, prompt, system_instruction):
+    def fake_call(client, model, prompt, system_instruction, response_schema=None):
         calls.append((model, system_instruction))
 
         if model == "primary-model":
@@ -177,6 +176,35 @@ def test_fallback_preserves_system_instruction(
     ]
 
 
+def test_fallback_preserves_response_schema(
+    monkeypatch, settings, cache, result
+):
+    monkeypatch.setattr(router.errors, "APIError", FakeAPIError)
+
+    calls = []
+
+    def fake_call(client, model, prompt, system_instruction, response_schema=None):
+        calls.append((model, response_schema))
+
+        if model == "primary-model":
+            raise FakeAPIError(404)
+
+        return result
+
+    monkeypatch.setattr(router, "call_gemini", fake_call)
+
+    schema = {"type": "object"}
+
+    router.call_with_fallback(
+        None, settings, "prompt", cache, None, schema
+    )
+
+    assert calls == [
+        ("primary-model", schema),
+        ("backup-model", schema),
+    ]
+
+
 def test_no_fallback_for_non_retryable_error(
     monkeypatch, settings, cache
 ):
@@ -184,7 +212,7 @@ def test_no_fallback_for_non_retryable_error(
 
     calls = []
 
-    def fake_call(client, model, prompt, system_instruction):
+    def fake_call(client, model, prompt, system_instruction, response_schema=None):
         calls.append(model)
         raise FakeAPIError(400)
 
