@@ -1,4 +1,5 @@
-"""Manual check: one question on one lease -> raw Gemini reply.
+
+"""Manual check: one question on one lease -> structured Gemini extraction.
 
 Usage: uv run python scripts/try_extract.py lease_01 monthly_rent
 """
@@ -7,11 +8,11 @@ import sys
 from pathlib import Path
 
 from clauselens.config import get_settings
-from clauselens.extraction.prompt import build_extraction_prompt
+from clauselens.extraction.extract import extract_fact
 from clauselens.ingest.chunker import groupBlocks_toClauses
 from clauselens.ingest.parser import parse_pdf
 from clauselens.llm.cache import ResponseCache
-from clauselens.llm.router import call_with_fallback, make_client
+from clauselens.llm.router import make_client
 from clauselens.retrieval.embeddings import EmbeddingRetriever
 from clauselens.retrieval.questions import QUESTIONS
 
@@ -29,13 +30,9 @@ def main() -> None:
     if question is None:
         sys.exit(f"Unknown question id: {field}")
 
-
-
     # Parse only this one lease (Docling is slow).
     blocks = parse_pdf(str(ROOT / "data" / f"{doc_id}.pdf"))
     clauses = groupBlocks_toClauses(blocks)
-
-
 
     # Same query as Day 4: question text + keywords.
     query = f"{question.text} {' '.join(question.keywords)}"
@@ -45,22 +42,23 @@ def main() -> None:
 
     print(f"\nRetrieved clauses: {[(i, clauses[i].title) for i in top]}")
 
-    prompt = build_extraction_prompt(question.text, chosen)
-    print("\n----- PROMPT -----")
-    print(prompt)
-
+    # Prepare Gemini and cache.
     settings = get_settings()
     client = make_client(settings)
     cache = ResponseCache(settings.cache_dir)
-    result = call_with_fallback(client, settings, prompt, cache)
 
-    print("\n----- REPLY -----")
-    print(result.text)
-    print(
-        f"\nmodel={result.model} in={result.input_tokens} "
-        f"out={result.output_tokens} thought={result.thought_tokens} "
-        f"latency={result.latency_s:.2f}s"
+    # Extract one structured fact.
+    fact = extract_fact(
+        client,
+        settings,
+        cache,
+        field,
+        question.text,
+        chosen,
     )
+
+    print("\n----- FACT -----")
+    print(fact.model_dump_json(indent=2))
 
 
 if __name__ == "__main__":

@@ -38,5 +38,5 @@ RULES:
 6. The page is the page number shown for the clause the quote came from.
 7. Write amounts as plain digits, for example 32000 instead of Rs 32,000.
 
-Reply with: status, answer, exact quote, page.
+Put the exact quote in the "line" field.
 """.strip()
