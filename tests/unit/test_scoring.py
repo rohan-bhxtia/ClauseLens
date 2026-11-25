@@ -11,16 +11,31 @@ from clauselens.extraction.scoring import (
 @pytest.mark.parametrize(
     ("gold", "pred", "expected"),
     [
-        ({"amount": 60, "unit": "days"},
-         {"amount": 2, "unit": "months"}, True),
-        ({"amount": 12, "unit": "months"},
-         {"amount": 1, "unit": "years"}, True),
-        ({"amount": 30, "unit": "days"},
-         {"amount": 2, "unit": "months"}, False),
-        ({"percent": 5, "when": "annually"},
-         {"percent": 5, "when": "monthly"}, False),
-        ({"amount": 1000, "payer": "tenant"},
-         {"amount": 1000, "payer": "landlord"}, False),
+        (
+            {"amount": 60, "unit": "days"},
+            {"amount": 2, "unit": "months"},
+            True,
+        ),
+        (
+            {"amount": 12, "unit": "months"},
+            {"amount": 1, "unit": "years"},
+            True,
+        ),
+        (
+            {"amount": 30, "unit": "days"},
+            {"amount": 2, "unit": "months"},
+            False,
+        ),
+        (
+            {"percent": 5, "when": "every_year"},
+            {"percent": 5, "when": "on_renewal"},
+            False,
+        ),
+        (
+            {"amount": 1000, "payer": "tenant"},
+            {"amount": 1000, "payer": "landlord"},
+            False,
+        ),
         (5, 5.0, True),
     ],
 )

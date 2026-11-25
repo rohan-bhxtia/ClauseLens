@@ -166,16 +166,74 @@ Known gaps:
 
 Build days used: 4 of 13
 
-## Day 5 — NEXT: Structured Fact Extraction
+## Day 5 — DONE (2026-11-20 → 2026-11-25): Structured Fact Extraction
 
-Goal: Use Gemini to extract the 15 lease facts from relevant clauses.
+Built:
+- `src/clauselens/extraction/prompt.py` — `build_extraction_prompt()`: question + the 3 retrieved clauses (page and title shown), rules for found / not_stated / unclear, one exact quoted sentence, amounts as plain digits
+- `src/clauselens/extraction/extract.py` — `extract_fact()`:
+  - Takes the schema from the `LeaseFacts` field type, so there are no 15 hand-written schemas
+  - Calls the router with `response_schema`; Pydantic validates the reply into a typed `Fact`
+  - Invalid reply → one repair retry with the Pydantic error added to the prompt, then `ExtractionError`
+- `src/clauselens/extraction/verify.py` — `build_page_text()` and `verify_quote()`: checks the quote against the whole PDF page (not only the retrieved clauses); returns verified / wrong_page / not_found / not_applicable
+- `src/clauselens/extraction/scoring.py` — comparison rules, written before looking at results: durations compared in days (1 month = 30 days, 1 year = 360), dict answers must match every gold key, everything else exact; a line matches gold if either normalized line contains the other
+- Router change: `response_schema` argument (JSON mode via `response_json_schema`) passed through `call_gemini`, `call_with_retry` and `call_with_fallback`; the cache key includes the schema only when one is given, so old cached keys stay valid
+- `scripts/try_extract.py` — one question on one lease, prints the typed Fact
+- `eval/run_extraction.py` — 5 leases × 15 questions: retrieve top 3 → extract → verify; saves `eval/results/extraction_run1.json` after every question; one failed question does not stop the run
+- `eval/score_extraction.py` — scores run 1 against gold with fixed denominators
+- Tests: `test_extract.py` (3, fake router), `test_verify.py` (5), `test_scoring.py`, `test_router.py` updated for the schema argument
 
-Planned:
-- Connect the existing lease schema to the LLM Router
-- Send relevant clauses to Gemini
-- Extract each fact with its value, exact source quote, page and status
-- Validate the response using Pydantic
-- Compare extracted facts against the gold answers and calculate the first accuracy score
+Test results:
+- 80 passed, 21 warnings (deprecation notices from Docling/Pydantic dependencies); run on Mac with `uv run pytest -q`
+- New this day: extraction (3), verification (5), scoring, and router tests updated for the response schema
+
+Results (run 1: 5 synthetic leases, 75 pairs. Not a general accuracy):
+
+| Metric | Result |
+|---|---|
+| Status accuracy | 71/75 (94.67%) |
+| Answer accuracy (gold found only) | 52/54 (96.30%) |
+| Stayed quiet when nothing was stated | 17/20 (85.00%) |
+| Quote verified on the cited page | 57/57 (100%) |
+| Line matches gold | 51/55 (92.73%) |
+| Page matches gold | 55/55 (100%) |
+| Extraction errors | 1 |
+| Quote check outcomes | verified 57, wrong_page 0, not_found 0 |
+
+Status confusion: found→found 53, found→unclear 1, not_stated→not_stated 17, not_stated→unclear 2, not_stated→ERROR 1, unclear→unclear 1.
+
+The 5 misses, with causes (read from the saved results):
+- lease_03 landlord_can_end_early: gold found, predicted unclear. Clauses 7A (60 days) and 7B (90 days) conflict on notice; both say the landlord can end early. Model was over-cautious. Real model miss.
+- lease_04 landlord_can_end_early: gold false, predicted true. Both used the "termination for material breach" sentence; the question does not say "without cause". Question wording gap.
+- lease_05 maintenance and deposit_refund_time: gold not_stated, predicted unclear. The lease text itself says it does not specify these, so unclear is defensible. Gold-definition gap between not_stated and unclear.
+- lease_05 late_fee: the one error. Gemini returned status found with a null answer; the repair attempt returned the same. Pydantic correctly rejected it.
+
+The 4 line mismatches are alternate but valid evidence (for example lease_02 agreement_type quotes the title where gold quotes the fee line), not fabricated quotes.
+
+Found:
+- Asking for a format in the prompt gave loose text ("Page 1", "N/A"); a response schema gave real integers and nulls
+- The cache key must include the schema, or typed and untyped calls would return each other's cached replies
+- Retrying with the same prompt would hit the cached bad reply → the repair prompt includes the error, so it is a new request
+- Gemini sometimes says "found" with an empty answer when it means "not stated"; the repair step fixed this once (lease_05 deposit_refund_time, which became unclear with the same quoted sentence) and failed once (lease_05 late_fee)
+- `verified` only proves the sentence exists on the cited page, not that it supports the answer
+- The first primary-model call hit a 503 (overload) and the router used the backup model; the backup accepted the schema
+
+Decisions:
+- Run 1 is the baseline. The prompt was not tuned on these 5 leases. If a rule such as "if the lease says it is unspecified, use not_stated" is added later, it is reported as a separate run, labelled as changed after seeing run 1 misses.
+- Gold files were not edited after seeing results.
+- `response_json_schema` with a plain schema dict is used instead of passing the Pydantic class
+- LangGraph retry workflow stays out of v0.5; the single repair retry covers the small version
+- Quote check uses the whole PDF page, independent of retrieval
+
+Known gaps:
+- Only 5 synthetic, clean-style leases (75 pairs): results are indicative, not general accuracy
+- Some calls in the run were served by the backup model (at least lease_02 total_length); the results file does not record which model answered
+- A quote that spans a page break would be reported as not_found
+- No unit test that the response schema changes the cache key (skipped by choice)
+- Two gold cases (lease_05 maintenance, deposit_refund_time) sit on the not_stated vs unclear boundary; one question (landlord_can_end_early) is ambiguous
+- agreement_type and conflict cases have more than one valid evidence line; the metric counts only the gold line
+- Extraction errors from Gemini API failures are recorded per question, but this run had none (the only error was an invalid reply)
+
+Build days used: 5 of 13 (Day 5 took 6 calendar days, 2026-11-20 → 2026-11-25)
 
 ## Remaining Days
 
@@ -193,4 +251,4 @@ Days 11–13 — Buffer, catch-up and lease comparison.
 
 ---
 
-**Current milestone:** PDF ingestion, Gemini Router and clause retrieval (Hit@3 = 100%) are complete. Next is structured fact extraction.
+**Current milestone:** PDF ingestion, Gemini Router, clause retrieval (Hit@3 = 100%) and structured fact extraction with quote verification (status 94.67%, answer 96.30%, 0 fabricated quotes on 5 synthetic leases) are complete. Next is Day 6: lease classifier, risk checks and human review.
