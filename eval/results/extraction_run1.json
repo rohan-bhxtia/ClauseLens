@@ -1,0 +1,2233 @@
+{
+  "lease_01": {
+    "agreement_type": {
+      "fact": {
+        "status": "found",
+        "answer": "rent",
+        "line": "RESIDENTIAL RENTAL AGREEMENT",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 0,
+          "title": "RESIDENTIAL RENTAL AGREEMENT",
+          "text": "RESIDENTIAL RENTAL AGREEMENT\n\nAgreement 01 - Standard residential tenancy\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "ENTIRE AGREEMENT AND SIGNATURES",
+          "text": "15. ENTIRE AGREEMENT AND SIGNATURES\n\nThis document and any signed inventory constitute the entire agreement between the Parties concerning the Premises and replace prior informal discussions on the same subject. Amendments must be written and signed by both Parties. Each Party confirms that they have had an opportunity to read and understand the terms.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 3
+        },
+        {
+          "index": 9,
+          "title": "NOTICE AND EARLY TERMINATION",
+          "text": "8. NOTICE AND EARLY TERMINATION\n\nEither Party may terminate this Agreement by giving sixty days' written notice. The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release. The Landlord may seek termination for material breach, non-payment, serious nuisance, or unlawful use, subject to applicable law and any required legal process. A notice may be delivered by email to the addresses confirmed by the Parties, with a copy by registered post or acknowledged message.",
+          "page": 2
+        }
+      ]
+    },
+    "monthly_rent": {
+      "fact": {
+        "status": "found",
+        "answer": 25000,
+        "line": "The Tenant shall pay monthly rent of ₹25,000 (Rupees Twenty-Five Thousand only), in advance, on or before the fifth calendar day of each month.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 4,
+          "title": "MONTHLY RENT",
+          "text": "3. MONTHLY RENT\n\nThe Tenant shall pay monthly rent of ₹25,000 (Rupees Twenty-Five Thousand only), in advance, on or before the fifth calendar day of each month. Payment shall be made by bank transfer to the account designated in writing by the Landlord. The Tenant should retain transaction confirmations. If the fifth day falls on a bank holiday, payment may be made on the next banking day without a late fee.",
+          "page": 1
+        },
+        {
+          "index": 8,
+          "title": "UTILITIES AND SOCIETY CHARGES",
+          "text": "7. UTILITIES AND SOCIETY CHARGES\n\nThe Tenant shall pay electricity, piped gas, internet, and water charges measured or billed for the period of occupation. The Landlord shall pay property tax and any owner-only assessment. Monthly building maintenance of ₹2,000 shall be paid by the Landlord. The Tenant shall follow reasonable written rules of the residential society concerning waste disposal, parking, noise, and use of common areas.",
+          "page": 2
+        },
+        {
+          "index": 10,
+          "title": "RENT ESCALATION",
+          "text": "9. RENT ESCALATION\n\nIf the Parties renew the tenancy for a further term, the monthly rent will increase by five percent from the first day of the renewed term, unless a different amount is agreed in writing. No escalation applies during the initial twelve-month term.",
+          "page": 2
+        }
+      ]
+    },
+    "security_deposit": {
+      "fact": {
+        "status": "found",
+        "answer": 75000,
+        "line": "On signing, the Tenant shall pay an interest-free refundable security deposit of ₹75,000, equal to three months of the monthly rent.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nOn signing, the Tenant shall pay an interest-free refundable security deposit of ₹75,000, equal to three months of the monthly rent. The deposit is security for unpaid rent, unpaid utility charges attributable to the tenancy, missing inventory items, and damage beyond reasonable wear and tear. The Landlord shall not treat the deposit as the final month's rent unless the Parties agree in writing.",
+          "page": 1
+        },
+        {
+          "index": 6,
+          "title": "DEPOSIT REFUND AND DEDUCTIONS",
+          "text": "5. DEPOSIT REFUND AND DEDUCTIONS\n\nWithin fifteen calendar days after the Tenant returns vacant possession and all keys, the Landlord shall refund the balance of the deposit. Any deduction must be itemised in writing and supported, where reasonably available, by photographs, invoices, or bills. No deduction shall be made for ordinary fading, minor scuffs from normal use, or ageing of fixtures. If a utility bill has not yet been issued, the Landlord may temporarily retain a reasonable estimated amount and settle the balance promptly after the bill arrives.",
+          "page": 1
+        },
+        {
+          "index": 4,
+          "title": "MONTHLY RENT",
+          "text": "3. MONTHLY RENT\n\nThe Tenant shall pay monthly rent of ₹25,000 (Rupees Twenty-Five Thousand only), in advance, on or before the fifth calendar day of each month. Payment shall be made by bank transfer to the account designated in writing by the Landlord. The Tenant should retain transaction confirmations. If the fifth day falls on a bank holiday, payment may be made on the next banking day without a late fee.",
+          "page": 1
+        }
+      ]
+    },
+    "total_length": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 12,
+          "unit": "months"
+        },
+        "line": "The tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law. Possession will be handed over on the commencement date after the initial rent and security deposit have been received. Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+          "page": 1
+        },
+        {
+          "index": 9,
+          "title": "NOTICE AND EARLY TERMINATION",
+          "text": "8. NOTICE AND EARLY TERMINATION\n\nEither Party may terminate this Agreement by giving sixty days' written notice. The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release. The Landlord may seek termination for material breach, non-payment, serious nuisance, or unlawful use, subject to applicable law and any required legal process. A notice may be delivered by email to the addresses confirmed by the Parties, with a copy by registered post or acknowledged message.",
+          "page": 2
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL RENTAL AGREEMENT",
+          "text": "RESIDENTIAL RENTAL AGREEMENT\n\nAgreement 01 - Standard residential tenancy\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "lock_in": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law. Possession will be handed over on the commencement date after the initial rent and security deposit have been received. Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+          "page": 1
+        },
+        {
+          "index": 9,
+          "title": "NOTICE AND EARLY TERMINATION",
+          "text": "8. NOTICE AND EARLY TERMINATION\n\nEither Party may terminate this Agreement by giving sixty days' written notice. The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release. The Landlord may seek termination for material breach, non-payment, serious nuisance, or unlawful use, subject to applicable law and any required legal process. A notice may be delivered by email to the addresses confirmed by the Parties, with a copy by registered post or acknowledged message.",
+          "page": 2
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT AND CURE",
+          "text": "13. DEFAULT AND CURE\n\nIf either Party materially breaches this Agreement, the other Party shall give written notice describing the breach and a reasonable opportunity to cure it where cure is possible. Failure to pay rent within ten days after written demand is a material breach. Nothing in this clause authorises unlawful eviction, disconnection of essential services, or seizure of the Tenant's belongings.",
+          "page": 2
+        }
+      ]
+    },
+    "lock_in_applies_to": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 11,
+          "title": "INSPECTION AND PRIVACY",
+          "text": "10. INSPECTION AND PRIVACY\n\nThe Landlord may inspect the Premises after giving at least twenty-four hours' notice and arranging a mutually reasonable time, except in an emergency involving immediate risk to persons or property. The Landlord shall not enter merely for convenience or disclose the Tenant's personal information except as reasonably required to administer the tenancy or comply with law.",
+          "page": 2
+        },
+        {
+          "index": 12,
+          "title": "ALTERATIONS, SUBLETTING AND OCCUPANTS",
+          "text": "11. ALTERATIONS, SUBLETTING AND OCCUPANTS\n\nThe Tenant shall not make structural alterations, change locks without providing a working emergency key, assign the Agreement, or sublet the Premises without the Landlord's prior written consent. Ordinary removable furniture and non-damaging decorations are permitted. The approved occupants are Aarav Deshmukh and one dependent family member. The Tenant shall notify the Landlord of any material change in occupancy.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law. Possession will be handed over on the commencement date after the initial rent and security deposit have been received. Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+          "page": 1
+        }
+      ]
+    },
+    "tenant_notice": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 60,
+          "unit": "days"
+        },
+        "line": "Either Party may terminate this Agreement by giving sixty days' written notice.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 9,
+          "title": "NOTICE AND EARLY TERMINATION",
+          "text": "8. NOTICE AND EARLY TERMINATION\n\nEither Party may terminate this Agreement by giving sixty days' written notice. The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release. The Landlord may seek termination for material breach, non-payment, serious nuisance, or unlawful use, subject to applicable law and any required legal process. A notice may be delivered by email to the addresses confirmed by the Parties, with a copy by registered post or acknowledged message.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law. Possession will be handed over on the commencement date after the initial rent and security deposit have been received. Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+          "page": 1
+        },
+        {
+          "index": 4,
+          "title": "MONTHLY RENT",
+          "text": "3. MONTHLY RENT\n\nThe Tenant shall pay monthly rent of ₹25,000 (Rupees Twenty-Five Thousand only), in advance, on or before the fifth calendar day of each month. Payment shall be made by bank transfer to the account designated in writing by the Landlord. The Tenant should retain transaction confirmations. If the fifth day falls on a bank holiday, payment may be made on the next banking day without a late fee.",
+          "page": 1
+        }
+      ]
+    },
+    "landlord_notice": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 60,
+          "unit": "days"
+        },
+        "line": "Either Party may terminate this Agreement by giving sixty days' written notice.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 9,
+          "title": "NOTICE AND EARLY TERMINATION",
+          "text": "8. NOTICE AND EARLY TERMINATION\n\nEither Party may terminate this Agreement by giving sixty days' written notice. The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release. The Landlord may seek termination for material breach, non-payment, serious nuisance, or unlawful use, subject to applicable law and any required legal process. A notice may be delivered by email to the addresses confirmed by the Parties, with a copy by registered post or acknowledged message.",
+          "page": 2
+        },
+        {
+          "index": 11,
+          "title": "INSPECTION AND PRIVACY",
+          "text": "10. INSPECTION AND PRIVACY\n\nThe Landlord may inspect the Premises after giving at least twenty-four hours' notice and arranging a mutually reasonable time, except in an emergency involving immediate risk to persons or property. The Landlord shall not enter merely for convenience or disclose the Tenant's personal information except as reasonably required to administer the tenancy or comply with law.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law. Possession will be handed over on the commencement date after the initial rent and security deposit have been received. Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+          "page": 1
+        }
+      ]
+    },
+    "tenant_can_leave_early": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 9,
+          "title": "NOTICE AND EARLY TERMINATION",
+          "text": "8. NOTICE AND EARLY TERMINATION\n\nEither Party may terminate this Agreement by giving sixty days' written notice. The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release. The Landlord may seek termination for material breach, non-payment, serious nuisance, or unlawful use, subject to applicable law and any required legal process. A notice may be delivered by email to the addresses confirmed by the Parties, with a copy by registered post or acknowledged message.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law. Possession will be handed over on the commencement date after the initial rent and security deposit have been received. Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+          "page": 1
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT AND CURE",
+          "text": "13. DEFAULT AND CURE\n\nIf either Party materially breaches this Agreement, the other Party shall give written notice describing the breach and a reasonable opportunity to cure it where cure is possible. Failure to pay rent within ten days after written demand is a material breach. Nothing in this clause authorises unlawful eviction, disconnection of essential services, or seizure of the Tenant's belongings.",
+          "page": 2
+        }
+      ]
+    },
+    "landlord_can_end_early": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "Either Party may terminate this Agreement by giving sixty days' written notice.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 9,
+          "title": "NOTICE AND EARLY TERMINATION",
+          "text": "8. NOTICE AND EARLY TERMINATION\n\nEither Party may terminate this Agreement by giving sixty days' written notice. The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release. The Landlord may seek termination for material breach, non-payment, serious nuisance, or unlawful use, subject to applicable law and any required legal process. A notice may be delivered by email to the addresses confirmed by the Parties, with a copy by registered post or acknowledged message.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law. Possession will be handed over on the commencement date after the initial rent and security deposit have been received. Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+          "page": 1
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT AND CURE",
+          "text": "13. DEFAULT AND CURE\n\nIf either Party materially breaches this Agreement, the other Party shall give written notice describing the breach and a reasonable opportunity to cure it where cure is possible. Failure to pay rent within ten days after written demand is a material breach. Nothing in this clause authorises unlawful eviction, disconnection of essential services, or seizure of the Tenant's belongings.",
+          "page": 2
+        }
+      ]
+    },
+    "rent_increase": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "percent": 5.0,
+          "when": "on_renewal"
+        },
+        "line": "If the Parties renew the tenancy for a further term, the monthly rent will increase by five percent from the first day of the renewed term, unless a different amount is agreed in writing.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 10,
+          "title": "RENT ESCALATION",
+          "text": "9. RENT ESCALATION\n\nIf the Parties renew the tenancy for a further term, the monthly rent will increase by five percent from the first day of the renewed term, unless a different amount is agreed in writing. No escalation applies during the initial twelve-month term.",
+          "page": 2
+        },
+        {
+          "index": 12,
+          "title": "ALTERATIONS, SUBLETTING AND OCCUPANTS",
+          "text": "11. ALTERATIONS, SUBLETTING AND OCCUPANTS\n\nThe Tenant shall not make structural alterations, change locks without providing a working emergency key, assign the Agreement, or sublet the Premises without the Landlord's prior written consent. Ordinary removable furniture and non-damaging decorations are permitted. The approved occupants are Aarav Deshmukh and one dependent family member. The Tenant shall notify the Landlord of any material change in occupancy.",
+          "page": 2
+        },
+        {
+          "index": 4,
+          "title": "MONTHLY RENT",
+          "text": "3. MONTHLY RENT\n\nThe Tenant shall pay monthly rent of ₹25,000 (Rupees Twenty-Five Thousand only), in advance, on or before the fifth calendar day of each month. Payment shall be made by bank transfer to the account designated in writing by the Landlord. The Tenant should retain transaction confirmations. If the fifth day falls on a bank holiday, payment may be made on the next banking day without a late fee.",
+          "page": 1
+        }
+      ]
+    },
+    "maintenance": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 2000,
+          "payer": "landlord"
+        },
+        "line": "Monthly building maintenance of ₹2,000 shall be paid by the Landlord.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "MAINTENANCE AND REPAIRS",
+          "text": "6. MAINTENANCE AND REPAIRS\n\nThe Landlord is responsible for structural repairs, concealed plumbing defects, major electrical faults not caused by the Tenant, and repair or replacement of supplied appliances that fail through ordinary use. The Tenant is responsible for routine cleanliness, replacing ordinary consumables such as light bulbs, and promptly reporting leaks, electrical hazards, pest activity, or damage. The Tenant shall not commission major repairs and deduct their cost from rent without written approval, except where emergency action is reasonably necessary to prevent immediate serious damage.",
+          "page": 2
+        },
+        {
+          "index": 8,
+          "title": "UTILITIES AND SOCIETY CHARGES",
+          "text": "7. UTILITIES AND SOCIETY CHARGES\n\nThe Tenant shall pay electricity, piped gas, internet, and water charges measured or billed for the period of occupation. The Landlord shall pay property tax and any owner-only assessment. Monthly building maintenance of ₹2,000 shall be paid by the Landlord. The Tenant shall follow reasonable written rules of the residential society concerning waste disposal, parking, noise, and use of common areas.",
+          "page": 2
+        },
+        {
+          "index": 6,
+          "title": "DEPOSIT REFUND AND DEDUCTIONS",
+          "text": "5. DEPOSIT REFUND AND DEDUCTIONS\n\nWithin fifteen calendar days after the Tenant returns vacant possession and all keys, the Landlord shall refund the balance of the deposit. Any deduction must be itemised in writing and supported, where reasonably available, by photographs, invoices, or bills. No deduction shall be made for ordinary fading, minor scuffs from normal use, or ageing of fixtures. If a utility bill has not yet been issued, the Landlord may temporarily retain a reasonable estimated amount and settle the balance promptly after the bill arrives.",
+          "page": 1
+        }
+      ]
+    },
+    "deposit_refund_time": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 15,
+          "unit": "days"
+        },
+        "line": "Within fifteen calendar days after the Tenant returns vacant possession and all keys, the Landlord shall refund the balance of the deposit.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 6,
+          "title": "DEPOSIT REFUND AND DEDUCTIONS",
+          "text": "5. DEPOSIT REFUND AND DEDUCTIONS\n\nWithin fifteen calendar days after the Tenant returns vacant possession and all keys, the Landlord shall refund the balance of the deposit. Any deduction must be itemised in writing and supported, where reasonably available, by photographs, invoices, or bills. No deduction shall be made for ordinary fading, minor scuffs from normal use, or ageing of fixtures. If a utility bill has not yet been issued, the Landlord may temporarily retain a reasonable estimated amount and settle the balance promptly after the bill arrives.",
+          "page": 1
+        },
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nOn signing, the Tenant shall pay an interest-free refundable security deposit of ₹75,000, equal to three months of the monthly rent. The deposit is security for unpaid rent, unpaid utility charges attributable to the tenancy, missing inventory items, and damage beyond reasonable wear and tear. The Landlord shall not treat the deposit as the final month's rent unless the Parties agree in writing.",
+          "page": 1
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law. Possession will be handed over on the commencement date after the initial rent and security deposit have been received. Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+          "page": 1
+        }
+      ]
+    },
+    "auto_renewal": {
+      "fact": {
+        "status": "found",
+        "answer": false,
+        "line": "Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 October 2026 and ends on 30 September 2027, a fixed term of twelve months, unless terminated earlier in accordance with this Agreement and applicable law. Possession will be handed over on the commencement date after the initial rent and security deposit have been received. Any extension must be recorded in a written document signed by both Parties; continued discussions alone do not create a renewal.",
+          "page": 1
+        },
+        {
+          "index": 10,
+          "title": "RENT ESCALATION",
+          "text": "9. RENT ESCALATION\n\nIf the Parties renew the tenancy for a further term, the monthly rent will increase by five percent from the first day of the renewed term, unless a different amount is agreed in writing. No escalation applies during the initial twelve-month term.",
+          "page": 2
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT AND CURE",
+          "text": "13. DEFAULT AND CURE\n\nIf either Party materially breaches this Agreement, the other Party shall give written notice describing the breach and a reasonable opportunity to cure it where cure is possible. Failure to pay rent within ten days after written demand is a material breach. Nothing in this clause authorises unlawful eviction, disconnection of essential services, or seizure of the Tenant's belongings.",
+          "page": 2
+        }
+      ]
+    },
+    "late_fee": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 9,
+          "title": "NOTICE AND EARLY TERMINATION",
+          "text": "8. NOTICE AND EARLY TERMINATION\n\nEither Party may terminate this Agreement by giving sixty days' written notice. The Tenant may leave before the fixed term ends by giving the same notice and paying rent through the notice period, unless the Landlord agrees in writing to an earlier release. The Landlord may seek termination for material breach, non-payment, serious nuisance, or unlawful use, subject to applicable law and any required legal process. A notice may be delivered by email to the addresses confirmed by the Parties, with a copy by registered post or acknowledged message.",
+          "page": 2
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT AND CURE",
+          "text": "13. DEFAULT AND CURE\n\nIf either Party materially breaches this Agreement, the other Party shall give written notice describing the breach and a reasonable opportunity to cure it where cure is possible. Failure to pay rent within ten days after written demand is a material breach. Nothing in this clause authorises unlawful eviction, disconnection of essential services, or seizure of the Tenant's belongings.",
+          "page": 2
+        },
+        {
+          "index": 4,
+          "title": "MONTHLY RENT",
+          "text": "3. MONTHLY RENT\n\nThe Tenant shall pay monthly rent of ₹25,000 (Rupees Twenty-Five Thousand only), in advance, on or before the fifth calendar day of each month. Payment shall be made by bank transfer to the account designated in writing by the Landlord. The Tenant should retain transaction confirmations. If the fifth day falls on a bank holiday, payment may be made on the next banking day without a late fee.",
+          "page": 1
+        }
+      ]
+    }
+  },
+  "lease_02": {
+    "agreement_type": {
+      "fact": {
+        "status": "found",
+        "answer": "leave_and_licence",
+        "line": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 0,
+          "title": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+          "text": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\n\nAgreement 02 - High deposit and long lock-in test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        },
+        {
+          "index": 4,
+          "title": "MONTHLY COMPENSATION",
+          "text": "3. MONTHLY COMPENSATION\n\nThe monthly licence fee/rent is ₹32,000, payable in advance by the third day of each month by electronic transfer. A payment is considered received when credited to the Owner's nominated account. The Occupant shall send proof of payment if requested. If payment remains outstanding for more than seven days after written reminder, the Owner may issue a formal breach notice and pursue lawful remedies.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "SIGNATURES",
+          "text": "15. SIGNATURES\n\nThe Parties confirm that they have reviewed this Agreement and understand that it contains a long lock-in period, a deposit equal to six months' fees, and a scheduled annual increase. They are encouraged to obtain independent advice before signing. Signed copies may be exchanged electronically if permitted by applicable law.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 3
+        }
+      ]
+    },
+    "monthly_rent": {
+      "fact": {
+        "status": "found",
+        "answer": 32000,
+        "line": "The monthly licence fee/rent is ₹32,000, payable in advance by the third day of each month by electronic transfer.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 4,
+          "title": "MONTHLY COMPENSATION",
+          "text": "3. MONTHLY COMPENSATION\n\nThe monthly licence fee/rent is ₹32,000, payable in advance by the third day of each month by electronic transfer. A payment is considered received when credited to the Owner's nominated account. The Occupant shall send proof of payment if requested. If payment remains outstanding for more than seven days after written reminder, the Owner may issue a formal breach notice and pursue lawful remedies.",
+          "page": 1
+        },
+        {
+          "index": 10,
+          "title": "UTILITIES AND CHARGES",
+          "text": "9. UTILITIES AND CHARGES\n\nThe Occupant shall pay electricity, gas, internet, and water consumption charges. The Owner shall pay property tax and owner-association charges. A monthly society service charge of ₹2,500 is payable by the Occupant in addition to the monthly fee. Any change in this charge must be supported by the society's written notice or bill.",
+          "page": 2
+        },
+        {
+          "index": 5,
+          "title": "REFUNDABLE DEPOSIT",
+          "text": "4. REFUNDABLE DEPOSIT\n\nThe Occupant shall pay a refundable, interest-free security deposit of ₹1,92,000, equal to six months of the monthly fee, before receiving keys. The deposit secures unpaid fees, unpaid metered utilities, damage beyond normal wear and tear, and unreturned listed items. The deposit is not advance rent and cannot be applied to monthly fees without the Owner's written consent.",
+          "page": 1
+        }
+      ]
+    },
+    "security_deposit": {
+      "fact": {
+        "status": "found",
+        "answer": 192000,
+        "line": "The Occupant shall pay a refundable, interest-free security deposit of ₹1,92,000, equal to six months of the monthly fee, before receiving keys.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 5,
+          "title": "REFUNDABLE DEPOSIT",
+          "text": "4. REFUNDABLE DEPOSIT\n\nThe Occupant shall pay a refundable, interest-free security deposit of ₹1,92,000, equal to six months of the monthly fee, before receiving keys. The deposit secures unpaid fees, unpaid metered utilities, damage beyond normal wear and tear, and unreturned listed items. The deposit is not advance rent and cannot be applied to monthly fees without the Owner's written consent.",
+          "page": 1
+        },
+        {
+          "index": 6,
+          "title": "RETURN OF DEPOSIT",
+          "text": "5. RETURN OF DEPOSIT\n\nWithin thirty calendar days after vacant possession, return of keys, and settlement of known charges, the Owner shall provide a written account of deductions and refund the undisputed balance. The Owner may deduct documented costs of repairing damage caused by the Occupant or replacing missing inventory. No deduction may be made for ordinary wear and tear. If the Owner disputes an item, the Owner shall identify the item and estimated amount in writing rather than withholding the entire deposit without explanation.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "SIGNATURES",
+          "text": "15. SIGNATURES\n\nThe Parties confirm that they have reviewed this Agreement and understand that it contains a long lock-in period, a deposit equal to six months' fees, and a scheduled annual increase. They are encouraged to obtain independent advice before signing. Signed copies may be exchanged electronically if permitted by applicable law.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 3
+        }
+      ]
+    },
+    "total_length": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 24,
+          "unit": "months"
+        },
+        "line": "The term begins on 1 November 2026 and continues until 31 October 2028, for twenty-four months.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "DURATION AND LOCK-IN",
+          "text": "2. DURATION AND LOCK-IN\n\nThe term begins on 1 November 2026 and continues until 31 October 2028, for twenty-four months. The first eighteen months are a lock-in period binding on both parties. During the lock-in, the Occupant may not terminate for convenience and must pay rent for the unexpired lock-in period if leaving early. The Owner may also not terminate for convenience during the same period, except for a material breach or as permitted by applicable law. The Parties acknowledge that enforceability and the amount recoverable for early departure may depend on applicable law and the facts.",
+          "page": 1
+        },
+        {
+          "index": 7,
+          "title": "NOTICE AND TERMINATION",
+          "text": "6. NOTICE AND TERMINATION\n\nAfter the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice. The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law. The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so. This clause does not exclude any non-waivable statutory rights.",
+          "page": 2
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+          "text": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\n\nAgreement 02 - High deposit and long lock-in test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "lock_in": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 18,
+          "unit": "months"
+        },
+        "line": "The first eighteen months are a lock-in period binding on both parties.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "DURATION AND LOCK-IN",
+          "text": "2. DURATION AND LOCK-IN\n\nThe term begins on 1 November 2026 and continues until 31 October 2028, for twenty-four months. The first eighteen months are a lock-in period binding on both parties. During the lock-in, the Occupant may not terminate for convenience and must pay rent for the unexpired lock-in period if leaving early. The Owner may also not terminate for convenience during the same period, except for a material breach or as permitted by applicable law. The Parties acknowledge that enforceability and the amount recoverable for early departure may depend on applicable law and the facts.",
+          "page": 1
+        },
+        {
+          "index": 7,
+          "title": "NOTICE AND TERMINATION",
+          "text": "6. NOTICE AND TERMINATION\n\nAfter the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice. The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law. The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so. This clause does not exclude any non-waivable statutory rights.",
+          "page": 2
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+          "text": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\n\nAgreement 02 - High deposit and long lock-in test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "lock_in_applies_to": {
+      "fact": {
+        "status": "found",
+        "answer": "both",
+        "line": "The first eighteen months are a lock-in period binding on both parties.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "DURATION AND LOCK-IN",
+          "text": "2. DURATION AND LOCK-IN\n\nThe term begins on 1 November 2026 and continues until 31 October 2028, for twenty-four months. The first eighteen months are a lock-in period binding on both parties. During the lock-in, the Occupant may not terminate for convenience and must pay rent for the unexpired lock-in period if leaving early. The Owner may also not terminate for convenience during the same period, except for a material breach or as permitted by applicable law. The Parties acknowledge that enforceability and the amount recoverable for early departure may depend on applicable law and the facts.",
+          "page": 1
+        },
+        {
+          "index": 7,
+          "title": "NOTICE AND TERMINATION",
+          "text": "6. NOTICE AND TERMINATION\n\nAfter the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice. The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law. The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so. This clause does not exclude any non-waivable statutory rights.",
+          "page": 2
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+          "text": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\n\nAgreement 02 - High deposit and long lock-in test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "tenant_notice": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 90,
+          "unit": "days"
+        },
+        "line": "After the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "NOTICE AND TERMINATION",
+          "text": "6. NOTICE AND TERMINATION\n\nAfter the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice. The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law. The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so. This clause does not exclude any non-waivable statutory rights.",
+          "page": 2
+        },
+        {
+          "index": 16,
+          "title": "SIGNATURES",
+          "text": "15. SIGNATURES\n\nThe Parties confirm that they have reviewed this Agreement and understand that it contains a long lock-in period, a deposit equal to six months' fees, and a scheduled annual increase. They are encouraged to obtain independent advice before signing. Signed copies may be exchanged electronically if permitted by applicable law.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 3
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+          "text": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\n\nAgreement 02 - High deposit and long lock-in test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "landlord_notice": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 90,
+          "unit": "days"
+        },
+        "line": "After the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "NOTICE AND TERMINATION",
+          "text": "6. NOTICE AND TERMINATION\n\nAfter the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice. The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law. The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so. This clause does not exclude any non-waivable statutory rights.",
+          "page": 2
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+          "text": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\n\nAgreement 02 - High deposit and long lock-in test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "SIGNATURES",
+          "text": "15. SIGNATURES\n\nThe Parties confirm that they have reviewed this Agreement and understand that it contains a long lock-in period, a deposit equal to six months' fees, and a scheduled annual increase. They are encouraged to obtain independent advice before signing. Signed copies may be exchanged electronically if permitted by applicable law.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 3
+        }
+      ]
+    },
+    "tenant_can_leave_early": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "After the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "NOTICE AND TERMINATION",
+          "text": "6. NOTICE AND TERMINATION\n\nAfter the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice. The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law. The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so. This clause does not exclude any non-waivable statutory rights.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "DURATION AND LOCK-IN",
+          "text": "2. DURATION AND LOCK-IN\n\nThe term begins on 1 November 2026 and continues until 31 October 2028, for twenty-four months. The first eighteen months are a lock-in period binding on both parties. During the lock-in, the Occupant may not terminate for convenience and must pay rent for the unexpired lock-in period if leaving early. The Owner may also not terminate for convenience during the same period, except for a material breach or as permitted by applicable law. The Parties acknowledge that enforceability and the amount recoverable for early departure may depend on applicable law and the facts.",
+          "page": 1
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+          "text": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\n\nAgreement 02 - High deposit and long lock-in test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "landlord_can_end_early": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "NOTICE AND TERMINATION",
+          "text": "6. NOTICE AND TERMINATION\n\nAfter the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice. The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law. The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so. This clause does not exclude any non-waivable statutory rights.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "DURATION AND LOCK-IN",
+          "text": "2. DURATION AND LOCK-IN\n\nThe term begins on 1 November 2026 and continues until 31 October 2028, for twenty-four months. The first eighteen months are a lock-in period binding on both parties. During the lock-in, the Occupant may not terminate for convenience and must pay rent for the unexpired lock-in period if leaving early. The Owner may also not terminate for convenience during the same period, except for a material breach or as permitted by applicable law. The Parties acknowledge that enforceability and the amount recoverable for early departure may depend on applicable law and the facts.",
+          "page": 1
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+          "text": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\n\nAgreement 02 - High deposit and long lock-in test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "rent_increase": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "percent": 8.0,
+          "when": "every_year"
+        },
+        "line": "On each anniversary of the commencement date, the monthly fee increases by eight percent over the amount payable immediately before that anniversary.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 8,
+          "title": "ANNUAL INCREASE",
+          "text": "7. ANNUAL INCREASE\n\nOn each anniversary of the commencement date, the monthly fee increases by eight percent over the amount payable immediately before that anniversary. The first increase is scheduled for 1 November 2027, changing the monthly amount from ₹32,000 to ₹34,560. The next increase, if the Agreement remains in force, is calculated as eight percent of ₹34,560.",
+          "page": 2
+        },
+        {
+          "index": 2,
+          "title": "GRANT AND USE",
+          "text": "1. GRANT AND USE\n\nThe Owner permits the Occupant to reside in Unit 604, Maple Crest, Baner Road, Pune, a furnished two-bedroom apartment with kitchen, two bathrooms, balcony, one covered parking space, and the furniture listed in Schedule A. The Premises may be used only for residential purposes. No business open to the public, short-stay hosting, or unlawful activity is permitted.",
+          "page": 1
+        },
+        {
+          "index": 3,
+          "title": "DURATION AND LOCK-IN",
+          "text": "2. DURATION AND LOCK-IN\n\nThe term begins on 1 November 2026 and continues until 31 October 2028, for twenty-four months. The first eighteen months are a lock-in period binding on both parties. During the lock-in, the Occupant may not terminate for convenience and must pay rent for the unexpired lock-in period if leaving early. The Owner may also not terminate for convenience during the same period, except for a material breach or as permitted by applicable law. The Parties acknowledge that enforceability and the amount recoverable for early departure may depend on applicable law and the facts.",
+          "page": 1
+        }
+      ]
+    },
+    "maintenance": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 2500,
+          "payer": "tenant"
+        },
+        "line": "A monthly society service charge of ₹2,500 is payable by the Occupant in addition to the monthly fee.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 9,
+          "title": "MAINTENANCE",
+          "text": "8. MAINTENANCE\n\nThe Owner shall maintain structural elements, concealed water lines, and supplied appliances unless damage was caused by misuse. The Occupant shall keep the Premises clean, replace ordinary consumables, and pay for damage caused by negligence or misuse. The Occupant shall report defects promptly and allow reasonable access for repairs. Emergency repairs may be arranged where delay risks serious damage, with prompt notice to the Owner.",
+          "page": 2
+        },
+        {
+          "index": 10,
+          "title": "UTILITIES AND CHARGES",
+          "text": "9. UTILITIES AND CHARGES\n\nThe Occupant shall pay electricity, gas, internet, and water consumption charges. The Owner shall pay property tax and owner-association charges. A monthly society service charge of ₹2,500 is payable by the Occupant in addition to the monthly fee. Any change in this charge must be supported by the society's written notice or bill.",
+          "page": 2
+        },
+        {
+          "index": 4,
+          "title": "MONTHLY COMPENSATION",
+          "text": "3. MONTHLY COMPENSATION\n\nThe monthly licence fee/rent is ₹32,000, payable in advance by the third day of each month by electronic transfer. A payment is considered received when credited to the Owner's nominated account. The Occupant shall send proof of payment if requested. If payment remains outstanding for more than seven days after written reminder, the Owner may issue a formal breach notice and pursue lawful remedies.",
+          "page": 1
+        }
+      ]
+    },
+    "deposit_refund_time": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 30,
+          "unit": "days"
+        },
+        "line": "Within thirty calendar days after vacant possession, return of keys, and settlement of known charges, the Owner shall provide a written account of deductions and refund the undisputed balance.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 5,
+          "title": "REFUNDABLE DEPOSIT",
+          "text": "4. REFUNDABLE DEPOSIT\n\nThe Occupant shall pay a refundable, interest-free security deposit of ₹1,92,000, equal to six months of the monthly fee, before receiving keys. The deposit secures unpaid fees, unpaid metered utilities, damage beyond normal wear and tear, and unreturned listed items. The deposit is not advance rent and cannot be applied to monthly fees without the Owner's written consent.",
+          "page": 1
+        },
+        {
+          "index": 6,
+          "title": "RETURN OF DEPOSIT",
+          "text": "5. RETURN OF DEPOSIT\n\nWithin thirty calendar days after vacant possession, return of keys, and settlement of known charges, the Owner shall provide a written account of deductions and refund the undisputed balance. The Owner may deduct documented costs of repairing damage caused by the Occupant or replacing missing inventory. No deduction may be made for ordinary wear and tear. If the Owner disputes an item, the Owner shall identify the item and estimated amount in writing rather than withholding the entire deposit without explanation.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "SIGNATURES",
+          "text": "15. SIGNATURES\n\nThe Parties confirm that they have reviewed this Agreement and understand that it contains a long lock-in period, a deposit equal to six months' fees, and a scheduled annual increase. They are encouraged to obtain independent advice before signing. Signed copies may be exchanged electronically if permitted by applicable law.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 3
+        }
+      ]
+    },
+    "auto_renewal": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "NOTICE AND TERMINATION",
+          "text": "6. NOTICE AND TERMINATION\n\nAfter the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice. The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law. The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so. This clause does not exclude any non-waivable statutory rights.",
+          "page": 2
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT",
+          "text": "RESIDENTIAL LEAVE AND OCCUPANCY AGREEMENT\n\nAgreement 02 - High deposit and long lock-in test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        },
+        {
+          "index": 3,
+          "title": "DURATION AND LOCK-IN",
+          "text": "2. DURATION AND LOCK-IN\n\nThe term begins on 1 November 2026 and continues until 31 October 2028, for twenty-four months. The first eighteen months are a lock-in period binding on both parties. During the lock-in, the Occupant may not terminate for convenience and must pay rent for the unexpired lock-in period if leaving early. The Owner may also not terminate for convenience during the same period, except for a material breach or as permitted by applicable law. The Parties acknowledge that enforceability and the amount recoverable for early departure may depend on applicable law and the facts.",
+          "page": 1
+        }
+      ]
+    },
+    "late_fee": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 4,
+          "title": "MONTHLY COMPENSATION",
+          "text": "3. MONTHLY COMPENSATION\n\nThe monthly licence fee/rent is ₹32,000, payable in advance by the third day of each month by electronic transfer. A payment is considered received when credited to the Owner's nominated account. The Occupant shall send proof of payment if requested. If payment remains outstanding for more than seven days after written reminder, the Owner may issue a formal breach notice and pursue lawful remedies.",
+          "page": 1
+        },
+        {
+          "index": 7,
+          "title": "NOTICE AND TERMINATION",
+          "text": "6. NOTICE AND TERMINATION\n\nAfter the eighteen-month lock-in expires, either Party may terminate by giving ninety days' written notice. The Owner may terminate earlier for material breach after written notice and an opportunity to cure where appropriate, subject to applicable law. The Occupant may request early release during the lock-in; the Owner may agree in writing to waive some or all remaining fees, but is not required by this Agreement to do so. This clause does not exclude any non-waivable statutory rights.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "DURATION AND LOCK-IN",
+          "text": "2. DURATION AND LOCK-IN\n\nThe term begins on 1 November 2026 and continues until 31 October 2028, for twenty-four months. The first eighteen months are a lock-in period binding on both parties. During the lock-in, the Occupant may not terminate for convenience and must pay rent for the unexpired lock-in period if leaving early. The Owner may also not terminate for convenience during the same period, except for a material breach or as permitted by applicable law. The Parties acknowledge that enforceability and the amount recoverable for early departure may depend on applicable law and the facts.",
+          "page": 1
+        }
+      ]
+    }
+  },
+  "lease_03": {
+    "agreement_type": {
+      "fact": {
+        "status": "found",
+        "answer": "rent",
+        "line": "RESIDENTIAL TENANCY AGREEMENT",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 17,
+          "title": "GENERAL",
+          "text": "16. GENERAL\n\nThis Agreement is the complete written understanding between the Parties concerning the tenancy, except for signed schedules and later written amendments. If one provision is unenforceable, the remaining provisions continue to the extent permitted by law. The Parties acknowledge that Clauses 6A, 7A, and 7B must be reviewed together because the landlord notice periods conflict.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        },
+        {
+          "index": 8,
+          "title": "LANDLORD TERMINATION",
+          "text": "7. LANDLORD TERMINATION\n\nClause 7A: The Landlord may terminate this Agreement for convenience by giving sixty days' written notice. Clause 7B: Notwithstanding Clause 7A, the Landlord may terminate this Agreement for convenience only by giving ninety days' written notice. The Parties have not initialled either clause to indicate which notice period controls. For extraction and evaluation purposes, this is an intentional unresolved conflict; do not assume that one clause overrides the other.",
+          "page": 1
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL TENANCY AGREEMENT",
+          "text": "RESIDENTIAL TENANCY AGREEMENT\n\nAgreement 03 - Conflicting termination clauses test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "monthly_rent": {
+      "fact": {
+        "status": "found",
+        "answer": 28500,
+        "line": "The Tenant shall pay ₹28,500 per month in advance on or before the seventh day of each month.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 4,
+          "title": "RENT",
+          "text": "3. RENT\n\nThe Tenant shall pay ₹28,500 per month in advance on or before the seventh day of each month. Payment shall be made by bank transfer. The Tenant is responsible for retaining proof of payment and notifying the Landlord if a transfer is returned or reversed.",
+          "page": 1
+        },
+        {
+          "index": 12,
+          "title": "UTILITIES",
+          "text": "11. UTILITIES\n\nThe Tenant shall pay electricity, cooking gas, water consumption, and internet charges for the period of occupancy. The Landlord shall pay property tax and building ownership assessments. Monthly common-area maintenance of ₹1,800 shall be shared equally: ₹900 paid by the Landlord and ₹900 paid by the Tenant.",
+          "page": 2
+        },
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nThe Tenant shall pay ₹85,500 as a refundable, interest-free security deposit, equal to three months of rent. The deposit may be used for unpaid rent, utility bills attributable to the tenancy, damage beyond ordinary wear and tear, or missing keys and inventory. The Landlord shall provide an itemised statement of deductions.",
+          "page": 1
+        }
+      ]
+    },
+    "security_deposit": {
+      "fact": {
+        "status": "found",
+        "answer": 85500,
+        "line": "The Tenant shall pay ₹85,500 as a refundable, interest-free security deposit, equal to three months of rent.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nThe Tenant shall pay ₹85,500 as a refundable, interest-free security deposit, equal to three months of rent. The deposit may be used for unpaid rent, utility bills attributable to the tenancy, damage beyond ordinary wear and tear, or missing keys and inventory. The Landlord shall provide an itemised statement of deductions.",
+          "page": 1
+        },
+        {
+          "index": 6,
+          "title": "DEPOSIT RETURN",
+          "text": "5. DEPOSIT RETURN\n\nThe Landlord shall refund the remaining deposit within twenty-one days after the Tenant vacates, returns all keys, and provides final utility readings. If final bills are pending, the Landlord may retain a reasonable estimate for those bills and refund the remainder, then settle the retained amount when actual bills arrive. Normal ageing and reasonable wear and tear are not deductible damage.",
+          "page": 1
+        },
+        {
+          "index": 4,
+          "title": "RENT",
+          "text": "3. RENT\n\nThe Tenant shall pay ₹28,500 per month in advance on or before the seventh day of each month. Payment shall be made by bank transfer. The Tenant is responsible for retaining proof of payment and notifying the Landlord if a transfer is returned or reversed.",
+          "page": 1
+        }
+      ]
+    },
+    "total_length": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 11,
+          "unit": "months"
+        },
+        "line": "The tenancy begins on 1 November 2026 for an initial term of eleven months, ending on 30 September 2027.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 8,
+          "title": "LANDLORD TERMINATION",
+          "text": "7. LANDLORD TERMINATION\n\nClause 7A: The Landlord may terminate this Agreement for convenience by giving sixty days' written notice. Clause 7B: Notwithstanding Clause 7A, the Landlord may terminate this Agreement for convenience only by giving ninety days' written notice. The Parties have not initialled either clause to indicate which notice period controls. For extraction and evaluation purposes, this is an intentional unresolved conflict; do not assume that one clause overrides the other.",
+          "page": 1
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 November 2026 for an initial term of eleven months, ending on 30 September 2027. Any renewal must be signed by both Parties. A discussion about renewal or acceptance of a payment does not by itself amend the written term, subject to applicable law.",
+          "page": 1
+        },
+        {
+          "index": 7,
+          "title": "TENANT TERMINATION",
+          "text": "6. TENANT TERMINATION\n\nClause 6A: The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord. Rent remains payable through the notice period. The Tenant must allow reasonable access for handover and return all keys.",
+          "page": 1
+        }
+      ]
+    },
+    "lock_in": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 8,
+          "title": "LANDLORD TERMINATION",
+          "text": "7. LANDLORD TERMINATION\n\nClause 7A: The Landlord may terminate this Agreement for convenience by giving sixty days' written notice. Clause 7B: Notwithstanding Clause 7A, the Landlord may terminate this Agreement for convenience only by giving ninety days' written notice. The Parties have not initialled either clause to indicate which notice period controls. For extraction and evaluation purposes, this is an intentional unresolved conflict; do not assume that one clause overrides the other.",
+          "page": 1
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 November 2026 for an initial term of eleven months, ending on 30 September 2027. Any renewal must be signed by both Parties. A discussion about renewal or acceptance of a payment does not by itself amend the written term, subject to applicable law.",
+          "page": 1
+        },
+        {
+          "index": 17,
+          "title": "GENERAL",
+          "text": "16. GENERAL\n\nThis Agreement is the complete written understanding between the Parties concerning the tenancy, except for signed schedules and later written amendments. If one provision is unenforceable, the remaining provisions continue to the extent permitted by law. The Parties acknowledge that Clauses 6A, 7A, and 7B must be reviewed together because the landlord notice periods conflict.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        }
+      ]
+    },
+    "lock_in_applies_to": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 4,
+          "title": "RENT",
+          "text": "3. RENT\n\nThe Tenant shall pay ₹28,500 per month in advance on or before the seventh day of each month. Payment shall be made by bank transfer. The Tenant is responsible for retaining proof of payment and notifying the Landlord if a transfer is returned or reversed.",
+          "page": 1
+        },
+        {
+          "index": 14,
+          "title": "INSPECTION AND ACCESS",
+          "text": "13. INSPECTION AND ACCESS\n\nThe Landlord may inspect after giving twenty-four hours' notice and arranging a reasonable time. In an emergency, immediate access may be necessary to prevent injury or serious property damage. The Landlord shall respect the Tenant's privacy and shall not use inspection rights to interfere unreasonably with occupation.",
+          "page": 2
+        },
+        {
+          "index": 7,
+          "title": "TENANT TERMINATION",
+          "text": "6. TENANT TERMINATION\n\nClause 6A: The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord. Rent remains payable through the notice period. The Tenant must allow reasonable access for handover and return all keys.",
+          "page": 1
+        }
+      ]
+    },
+    "tenant_notice": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 30,
+          "unit": "days"
+        },
+        "line": "The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "TENANT TERMINATION",
+          "text": "6. TENANT TERMINATION\n\nClause 6A: The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord. Rent remains payable through the notice period. The Tenant must allow reasonable access for handover and return all keys.",
+          "page": 1
+        },
+        {
+          "index": 8,
+          "title": "LANDLORD TERMINATION",
+          "text": "7. LANDLORD TERMINATION\n\nClause 7A: The Landlord may terminate this Agreement for convenience by giving sixty days' written notice. Clause 7B: Notwithstanding Clause 7A, the Landlord may terminate this Agreement for convenience only by giving ninety days' written notice. The Parties have not initialled either clause to indicate which notice period controls. For extraction and evaluation purposes, this is an intentional unresolved conflict; do not assume that one clause overrides the other.",
+          "page": 1
+        },
+        {
+          "index": 17,
+          "title": "GENERAL",
+          "text": "16. GENERAL\n\nThis Agreement is the complete written understanding between the Parties concerning the tenancy, except for signed schedules and later written amendments. If one provision is unenforceable, the remaining provisions continue to the extent permitted by law. The Parties acknowledge that Clauses 6A, 7A, and 7B must be reviewed together because the landlord notice periods conflict.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        }
+      ]
+    },
+    "landlord_notice": {
+      "fact": {
+        "status": "unclear",
+        "answer": null,
+        "line": "Clause 7A: The Landlord may terminate this Agreement for convenience by giving sixty days' written notice.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "TENANT TERMINATION",
+          "text": "6. TENANT TERMINATION\n\nClause 6A: The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord. Rent remains payable through the notice period. The Tenant must allow reasonable access for handover and return all keys.",
+          "page": 1
+        },
+        {
+          "index": 8,
+          "title": "LANDLORD TERMINATION",
+          "text": "7. LANDLORD TERMINATION\n\nClause 7A: The Landlord may terminate this Agreement for convenience by giving sixty days' written notice. Clause 7B: Notwithstanding Clause 7A, the Landlord may terminate this Agreement for convenience only by giving ninety days' written notice. The Parties have not initialled either clause to indicate which notice period controls. For extraction and evaluation purposes, this is an intentional unresolved conflict; do not assume that one clause overrides the other.",
+          "page": 1
+        },
+        {
+          "index": 17,
+          "title": "GENERAL",
+          "text": "16. GENERAL\n\nThis Agreement is the complete written understanding between the Parties concerning the tenancy, except for signed schedules and later written amendments. If one provision is unenforceable, the remaining provisions continue to the extent permitted by law. The Parties acknowledge that Clauses 6A, 7A, and 7B must be reviewed together because the landlord notice periods conflict.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        }
+      ]
+    },
+    "tenant_can_leave_early": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "TENANT TERMINATION",
+          "text": "6. TENANT TERMINATION\n\nClause 6A: The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord. Rent remains payable through the notice period. The Tenant must allow reasonable access for handover and return all keys.",
+          "page": 1
+        },
+        {
+          "index": 8,
+          "title": "LANDLORD TERMINATION",
+          "text": "7. LANDLORD TERMINATION\n\nClause 7A: The Landlord may terminate this Agreement for convenience by giving sixty days' written notice. Clause 7B: Notwithstanding Clause 7A, the Landlord may terminate this Agreement for convenience only by giving ninety days' written notice. The Parties have not initialled either clause to indicate which notice period controls. For extraction and evaluation purposes, this is an intentional unresolved conflict; do not assume that one clause overrides the other.",
+          "page": 1
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL TENANCY AGREEMENT",
+          "text": "RESIDENTIAL TENANCY AGREEMENT\n\nAgreement 03 - Conflicting termination clauses test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "landlord_can_end_early": {
+      "fact": {
+        "status": "unclear",
+        "answer": null,
+        "line": "The Landlord may terminate this Agreement for convenience by giving sixty days' written notice.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "TENANT TERMINATION",
+          "text": "6. TENANT TERMINATION\n\nClause 6A: The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord. Rent remains payable through the notice period. The Tenant must allow reasonable access for handover and return all keys.",
+          "page": 1
+        },
+        {
+          "index": 8,
+          "title": "LANDLORD TERMINATION",
+          "text": "7. LANDLORD TERMINATION\n\nClause 7A: The Landlord may terminate this Agreement for convenience by giving sixty days' written notice. Clause 7B: Notwithstanding Clause 7A, the Landlord may terminate this Agreement for convenience only by giving ninety days' written notice. The Parties have not initialled either clause to indicate which notice period controls. For extraction and evaluation purposes, this is an intentional unresolved conflict; do not assume that one clause overrides the other.",
+          "page": 1
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL TENANCY AGREEMENT",
+          "text": "RESIDENTIAL TENANCY AGREEMENT\n\nAgreement 03 - Conflicting termination clauses test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "rent_increase": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "percent": 6.0,
+          "when": "on_renewal"
+        },
+        "line": "If the Parties sign a renewal, rent shall increase by six percent from the first day of the renewed term unless they agree in writing to another amount.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 10,
+          "title": "RENT INCREASE",
+          "text": "9. RENT INCREASE\n\nIf the Parties sign a renewal, rent shall increase by six percent from the first day of the renewed term unless they agree in writing to another amount. The rent does not automatically increase during the initial term.",
+          "page": 2
+        },
+        {
+          "index": 4,
+          "title": "RENT",
+          "text": "3. RENT\n\nThe Tenant shall pay ₹28,500 per month in advance on or before the seventh day of each month. Payment shall be made by bank transfer. The Tenant is responsible for retaining proof of payment and notifying the Landlord if a transfer is returned or reversed.",
+          "page": 1
+        },
+        {
+          "index": 13,
+          "title": "ALTERATIONS AND SUBLETTING",
+          "text": "12. ALTERATIONS AND SUBLETTING\n\nNo structural alteration or permanent fixture may be installed without written consent. The Tenant shall not assign or sublet the Premises without the Landlord's prior written approval. Ordinary guests are permitted for short visits, provided the Premises is not used as a guest house or short-stay rental.",
+          "page": 2
+        }
+      ]
+    },
+    "maintenance": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 1800,
+          "payer": "shared"
+        },
+        "line": "Monthly common-area maintenance of ₹1,800 shall be shared equally: ₹900 paid by the Landlord and ₹900 paid by the Tenant.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 11,
+          "title": "MAINTENANCE",
+          "text": "10. MAINTENANCE\n\nThe Landlord shall handle structural repairs and major failures of plumbing and electrical systems not caused by the Tenant. The Tenant shall keep the Premises reasonably clean, replace consumable items, and promptly report defects. The Tenant is responsible for repair costs where damage results from negligence, misuse, or an unauthorised alteration.",
+          "page": 2
+        },
+        {
+          "index": 12,
+          "title": "UTILITIES",
+          "text": "11. UTILITIES\n\nThe Tenant shall pay electricity, cooking gas, water consumption, and internet charges for the period of occupancy. The Landlord shall pay property tax and building ownership assessments. Monthly common-area maintenance of ₹1,800 shall be shared equally: ₹900 paid by the Landlord and ₹900 paid by the Tenant.",
+          "page": 2
+        },
+        {
+          "index": 4,
+          "title": "RENT",
+          "text": "3. RENT\n\nThe Tenant shall pay ₹28,500 per month in advance on or before the seventh day of each month. Payment shall be made by bank transfer. The Tenant is responsible for retaining proof of payment and notifying the Landlord if a transfer is returned or reversed.",
+          "page": 1
+        }
+      ]
+    },
+    "deposit_refund_time": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 21,
+          "unit": "days"
+        },
+        "line": "The Landlord shall refund the remaining deposit within twenty-one days after the Tenant vacates, returns all keys, and provides final utility readings.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 6,
+          "title": "DEPOSIT RETURN",
+          "text": "5. DEPOSIT RETURN\n\nThe Landlord shall refund the remaining deposit within twenty-one days after the Tenant vacates, returns all keys, and provides final utility readings. If final bills are pending, the Landlord may retain a reasonable estimate for those bills and refund the remainder, then settle the retained amount when actual bills arrive. Normal ageing and reasonable wear and tear are not deductible damage.",
+          "page": 1
+        },
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nThe Tenant shall pay ₹85,500 as a refundable, interest-free security deposit, equal to three months of rent. The deposit may be used for unpaid rent, utility bills attributable to the tenancy, damage beyond ordinary wear and tear, or missing keys and inventory. The Landlord shall provide an itemised statement of deductions.",
+          "page": 1
+        },
+        {
+          "index": 4,
+          "title": "RENT",
+          "text": "3. RENT\n\nThe Tenant shall pay ₹28,500 per month in advance on or before the seventh day of each month. Payment shall be made by bank transfer. The Tenant is responsible for retaining proof of payment and notifying the Landlord if a transfer is returned or reversed.",
+          "page": 1
+        }
+      ]
+    },
+    "auto_renewal": {
+      "fact": {
+        "status": "found",
+        "answer": false,
+        "line": "Any renewal must be signed by both Parties.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy begins on 1 November 2026 for an initial term of eleven months, ending on 30 September 2027. Any renewal must be signed by both Parties. A discussion about renewal or acceptance of a payment does not by itself amend the written term, subject to applicable law.",
+          "page": 1
+        },
+        {
+          "index": 10,
+          "title": "RENT INCREASE",
+          "text": "9. RENT INCREASE\n\nIf the Parties sign a renewal, rent shall increase by six percent from the first day of the renewed term unless they agree in writing to another amount. The rent does not automatically increase during the initial term.",
+          "page": 2
+        },
+        {
+          "index": 7,
+          "title": "TENANT TERMINATION",
+          "text": "6. TENANT TERMINATION\n\nClause 6A: The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord. Rent remains payable through the notice period. The Tenant must allow reasonable access for handover and return all keys.",
+          "page": 1
+        }
+      ]
+    },
+    "late_fee": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 4,
+          "title": "RENT",
+          "text": "3. RENT\n\nThe Tenant shall pay ₹28,500 per month in advance on or before the seventh day of each month. Payment shall be made by bank transfer. The Tenant is responsible for retaining proof of payment and notifying the Landlord if a transfer is returned or reversed.",
+          "page": 1
+        },
+        {
+          "index": 7,
+          "title": "TENANT TERMINATION",
+          "text": "6. TENANT TERMINATION\n\nClause 6A: The Tenant may terminate this Agreement at any time by giving thirty days' written notice to the Landlord. Rent remains payable through the notice period. The Tenant must allow reasonable access for handover and return all keys.",
+          "page": 1
+        },
+        {
+          "index": 6,
+          "title": "DEPOSIT RETURN",
+          "text": "5. DEPOSIT RETURN\n\nThe Landlord shall refund the remaining deposit within twenty-one days after the Tenant vacates, returns all keys, and provides final utility readings. If final bills are pending, the Landlord may retain a reasonable estimate for those bills and refund the remainder, then settle the retained amount when actual bills arrive. Normal ageing and reasonable wear and tear are not deductible damage.",
+          "page": 1
+        }
+      ]
+    }
+  },
+  "lease_04": {
+    "agreement_type": {
+      "fact": {
+        "status": "found",
+        "answer": "rent",
+        "line": "RESIDENTIAL RENTAL AGREEMENT",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 0,
+          "title": "RESIDENTIAL RENTAL AGREEMENT",
+          "text": "RESIDENTIAL RENTAL AGREEMENT\n\nAgreement 04 - Automatic renewal and missing opt-out test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT",
+          "text": "13. DEFAULT\n\nA Party alleging a material breach shall provide written notice and a reasonable opportunity to remedy the breach where appropriate. Rent unpaid for more than ten days after written demand is a material breach. Nothing in this Agreement permits unlawful self-help eviction or overrides mandatory tenant protections.",
+          "page": 2
+        },
+        {
+          "index": 16,
+          "title": "ENTIRE AGREEMENT",
+          "text": "15. ENTIRE AGREEMENT\n\nThis Agreement, the inventory, and any signed handover report form the complete agreement. Changes must be recorded in writing and signed by both Parties. The Parties should clarify the interaction between automatic renewal and Tenant termination before executing the document.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        }
+      ]
+    },
+    "monthly_rent": {
+      "fact": {
+        "status": "found",
+        "answer": 30000,
+        "line": "Monthly rent is ₹30,000, payable on or before the fifth day of each month.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 4,
+          "title": "RENT AND PAYMENT",
+          "text": "3. RENT AND PAYMENT\n\nMonthly rent is ₹30,000, payable on or before the fifth day of each month. Payment shall be made electronically to the bank account designated by the Landlord. Rent is payable for the entire period of occupation, subject to any written adjustment or applicable legal requirement.",
+          "page": 1
+        },
+        {
+          "index": 9,
+          "title": "UTILITIES AND TAXES",
+          "text": "8. UTILITIES AND TAXES\n\nThe Tenant shall pay electricity, water consumption, cooking gas, and internet charges. The Landlord shall pay property tax and building-owner assessments. Garden maintenance of ₹1,200 per month shall be paid by the Tenant. The Tenant must provide copies of utility payment receipts on reasonable request.",
+          "page": 2
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT",
+          "text": "13. DEFAULT\n\nA Party alleging a material breach shall provide written notice and a reasonable opportunity to remedy the breach where appropriate. Rent unpaid for more than ten days after written demand is a material breach. Nothing in this Agreement permits unlawful self-help eviction or overrides mandatory tenant protections.",
+          "page": 2
+        }
+      ]
+    },
+    "security_deposit": {
+      "fact": {
+        "status": "found",
+        "answer": 90000,
+        "line": "The Tenant shall pay ₹90,000, equal to three months of rent, as an interest-free refundable security deposit.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nThe Tenant shall pay ₹90,000, equal to three months of rent, as an interest-free refundable security deposit. The deposit may cover unpaid rent, unpaid utilities, missing keys, and damage beyond normal wear and tear. The Landlord shall not charge for ordinary deterioration caused by normal residential use.",
+          "page": 1
+        },
+        {
+          "index": 4,
+          "title": "RENT AND PAYMENT",
+          "text": "3. RENT AND PAYMENT\n\nMonthly rent is ₹30,000, payable on or before the fifth day of each month. Payment shall be made electronically to the bank account designated by the Landlord. Rent is payable for the entire period of occupation, subject to any written adjustment or applicable legal requirement.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "ENTIRE AGREEMENT",
+          "text": "15. ENTIRE AGREEMENT\n\nThis Agreement, the inventory, and any signed handover report form the complete agreement. Changes must be recorded in writing and signed by both Parties. The Parties should clarify the interaction between automatic renewal and Tenant termination before executing the document.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        }
+      ]
+    },
+    "total_length": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 1,
+          "unit": "years"
+        },
+        "line": "The initial term starts on 1 October 2026 and ends on 30 September 2027.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 16,
+          "title": "ENTIRE AGREEMENT",
+          "text": "15. ENTIRE AGREEMENT\n\nThis Agreement, the inventory, and any signed handover report form the complete agreement. Changes must be recorded in writing and signed by both Parties. The Parties should clarify the interaction between automatic renewal and Tenant termination before executing the document.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        },
+        {
+          "index": 6,
+          "title": "AUTOMATIC RENEWAL",
+          "text": "5. AUTOMATIC RENEWAL\n\nAt the end of the initial term, this Agreement automatically renews for successive twelve-month periods unless the Landlord gives written notice of non-renewal at least ninety days before the end of the current term. This clause does not expressly provide the Tenant with a corresponding right to opt out of automatic renewal. The Parties should review this asymmetry before signing; the clause is intentionally included as a risk-detection test case.",
+          "page": 1
+        },
+        {
+          "index": 3,
+          "title": "INITIAL TERM",
+          "text": "2. INITIAL TERM\n\nThe initial term starts on 1 October 2026 and ends on 30 September 2027. Possession begins after payment of the first month's rent and security deposit. The Tenant shall notify the Landlord promptly of any condition that threatens safety or could cause significant damage.",
+          "page": 1
+        }
+      ]
+    },
+    "lock_in": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 6,
+          "title": "AUTOMATIC RENEWAL",
+          "text": "5. AUTOMATIC RENEWAL\n\nAt the end of the initial term, this Agreement automatically renews for successive twelve-month periods unless the Landlord gives written notice of non-renewal at least ninety days before the end of the current term. This clause does not expressly provide the Tenant with a corresponding right to opt out of automatic renewal. The Parties should review this asymmetry before signing; the clause is intentionally included as a risk-detection test case.",
+          "page": 1
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT",
+          "text": "13. DEFAULT\n\nA Party alleging a material breach shall provide written notice and a reasonable opportunity to remedy the breach where appropriate. Rent unpaid for more than ten days after written demand is a material breach. Nothing in this Agreement permits unlawful self-help eviction or overrides mandatory tenant protections.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "INITIAL TERM",
+          "text": "2. INITIAL TERM\n\nThe initial term starts on 1 October 2026 and ends on 30 September 2027. Possession begins after payment of the first month's rent and security deposit. The Tenant shall notify the Landlord promptly of any condition that threatens safety or could cause significant damage.",
+          "page": 1
+        }
+      ]
+    },
+    "lock_in_applies_to": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 11,
+          "title": "LANDLORD ACCESS",
+          "text": "10. LANDLORD ACCESS\n\nThe Landlord may enter after twenty-four hours' notice for inspection, maintenance, or to show the Premises to prospective tenants during the final three months of a term. Entry without notice is limited to a genuine emergency. Visits must occur at reasonable times and should minimise disruption.",
+          "page": 2
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT",
+          "text": "13. DEFAULT\n\nA Party alleging a material breach shall provide written notice and a reasonable opportunity to remedy the breach where appropriate. Rent unpaid for more than ten days after written demand is a material breach. Nothing in this Agreement permits unlawful self-help eviction or overrides mandatory tenant protections.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "INITIAL TERM",
+          "text": "2. INITIAL TERM\n\nThe initial term starts on 1 October 2026 and ends on 30 September 2027. Possession begins after payment of the first month's rent and security deposit. The Tenant shall notify the Landlord promptly of any condition that threatens safety or could cause significant damage.",
+          "page": 1
+        }
+      ]
+    },
+    "tenant_notice": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 60,
+          "unit": "days"
+        },
+        "line": "The Tenant may request early termination by giving sixty days' written notice, but Clause 5 states that automatic renewal occurs unless the Landlord gives timely non-renewal notice.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "NOTICE AND EARLY EXIT",
+          "text": "6. NOTICE AND EARLY EXIT\n\nThe Tenant may request early termination by giving sixty days' written notice, but Clause 5 states that automatic renewal occurs unless the Landlord gives timely non-renewal notice. The Agreement does not expressly state whether a Tenant's early-termination notice prevents a future automatic renewal. The Landlord may seek termination for material breach after written notice and subject to applicable law. This drafting gap is intentional for evaluation.",
+          "page": 1
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT",
+          "text": "13. DEFAULT\n\nA Party alleging a material breach shall provide written notice and a reasonable opportunity to remedy the breach where appropriate. Rent unpaid for more than ten days after written demand is a material breach. Nothing in this Agreement permits unlawful self-help eviction or overrides mandatory tenant protections.",
+          "page": 2
+        },
+        {
+          "index": 16,
+          "title": "ENTIRE AGREEMENT",
+          "text": "15. ENTIRE AGREEMENT\n\nThis Agreement, the inventory, and any signed handover report form the complete agreement. Changes must be recorded in writing and signed by both Parties. The Parties should clarify the interaction between automatic renewal and Tenant termination before executing the document.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        }
+      ]
+    },
+    "landlord_notice": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "NOTICE AND EARLY EXIT",
+          "text": "6. NOTICE AND EARLY EXIT\n\nThe Tenant may request early termination by giving sixty days' written notice, but Clause 5 states that automatic renewal occurs unless the Landlord gives timely non-renewal notice. The Agreement does not expressly state whether a Tenant's early-termination notice prevents a future automatic renewal. The Landlord may seek termination for material breach after written notice and subject to applicable law. This drafting gap is intentional for evaluation.",
+          "page": 1
+        },
+        {
+          "index": 11,
+          "title": "LANDLORD ACCESS",
+          "text": "10. LANDLORD ACCESS\n\nThe Landlord may enter after twenty-four hours' notice for inspection, maintenance, or to show the Premises to prospective tenants during the final three months of a term. Entry without notice is limited to a genuine emergency. Visits must occur at reasonable times and should minimise disruption.",
+          "page": 2
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT",
+          "text": "13. DEFAULT\n\nA Party alleging a material breach shall provide written notice and a reasonable opportunity to remedy the breach where appropriate. Rent unpaid for more than ten days after written demand is a material breach. Nothing in this Agreement permits unlawful self-help eviction or overrides mandatory tenant protections.",
+          "page": 2
+        }
+      ]
+    },
+    "tenant_can_leave_early": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "The Tenant may request early termination by giving sixty days' written notice, but Clause 5 states that automatic renewal occurs unless the Landlord gives timely non-renewal notice.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "NOTICE AND EARLY EXIT",
+          "text": "6. NOTICE AND EARLY EXIT\n\nThe Tenant may request early termination by giving sixty days' written notice, but Clause 5 states that automatic renewal occurs unless the Landlord gives timely non-renewal notice. The Agreement does not expressly state whether a Tenant's early-termination notice prevents a future automatic renewal. The Landlord may seek termination for material breach after written notice and subject to applicable law. This drafting gap is intentional for evaluation.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "ENTIRE AGREEMENT",
+          "text": "15. ENTIRE AGREEMENT\n\nThis Agreement, the inventory, and any signed handover report form the complete agreement. Changes must be recorded in writing and signed by both Parties. The Parties should clarify the interaction between automatic renewal and Tenant termination before executing the document.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        },
+        {
+          "index": 6,
+          "title": "AUTOMATIC RENEWAL",
+          "text": "5. AUTOMATIC RENEWAL\n\nAt the end of the initial term, this Agreement automatically renews for successive twelve-month periods unless the Landlord gives written notice of non-renewal at least ninety days before the end of the current term. This clause does not expressly provide the Tenant with a corresponding right to opt out of automatic renewal. The Parties should review this asymmetry before signing; the clause is intentionally included as a risk-detection test case.",
+          "page": 1
+        }
+      ]
+    },
+    "landlord_can_end_early": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "The Landlord may seek termination for material breach after written notice and subject to applicable law.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "NOTICE AND EARLY EXIT",
+          "text": "6. NOTICE AND EARLY EXIT\n\nThe Tenant may request early termination by giving sixty days' written notice, but Clause 5 states that automatic renewal occurs unless the Landlord gives timely non-renewal notice. The Agreement does not expressly state whether a Tenant's early-termination notice prevents a future automatic renewal. The Landlord may seek termination for material breach after written notice and subject to applicable law. This drafting gap is intentional for evaluation.",
+          "page": 1
+        },
+        {
+          "index": 6,
+          "title": "AUTOMATIC RENEWAL",
+          "text": "5. AUTOMATIC RENEWAL\n\nAt the end of the initial term, this Agreement automatically renews for successive twelve-month periods unless the Landlord gives written notice of non-renewal at least ninety days before the end of the current term. This clause does not expressly provide the Tenant with a corresponding right to opt out of automatic renewal. The Parties should review this asymmetry before signing; the clause is intentionally included as a risk-detection test case.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "ENTIRE AGREEMENT",
+          "text": "15. ENTIRE AGREEMENT\n\nThis Agreement, the inventory, and any signed handover report form the complete agreement. Changes must be recorded in writing and signed by both Parties. The Parties should clarify the interaction between automatic renewal and Tenant termination before executing the document.\n\nLANDLORD ________________________________ TENANT ________________________________\n\nSignature lines are included only to make the layout realistic. This synthetic test document is not intended for execution.",
+          "page": 2
+        }
+      ]
+    },
+    "rent_increase": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "percent": 7.0,
+          "when": "on_renewal"
+        },
+        "line": "On each renewal anniversary, monthly rent increases by seven percent over the rent payable immediately before renewal.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 8,
+          "title": "RENT ESCALATION",
+          "text": "7. RENT ESCALATION\n\nOn each renewal anniversary, monthly rent increases by seven percent over the rent payable immediately before renewal. If the initial rent is ₹30,000, the first renewal rent would be ₹32,100 if the Agreement renews and the increase is applied. Any later increase is calculated on the then-current rent.",
+          "page": 1
+        },
+        {
+          "index": 4,
+          "title": "RENT AND PAYMENT",
+          "text": "3. RENT AND PAYMENT\n\nMonthly rent is ₹30,000, payable on or before the fifth day of each month. Payment shall be made electronically to the bank account designated by the Landlord. Rent is payable for the entire period of occupation, subject to any written adjustment or applicable legal requirement.",
+          "page": 1
+        },
+        {
+          "index": 14,
+          "title": "DEFAULT",
+          "text": "13. DEFAULT\n\nA Party alleging a material breach shall provide written notice and a reasonable opportunity to remedy the breach where appropriate. Rent unpaid for more than ten days after written demand is a material breach. Nothing in this Agreement permits unlawful self-help eviction or overrides mandatory tenant protections.",
+          "page": 2
+        }
+      ]
+    },
+    "maintenance": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 1200,
+          "payer": "tenant"
+        },
+        "line": "Garden maintenance of ₹1,200 per month shall be paid by the Tenant.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 9,
+          "title": "UTILITIES AND TAXES",
+          "text": "8. UTILITIES AND TAXES\n\nThe Tenant shall pay electricity, water consumption, cooking gas, and internet charges. The Landlord shall pay property tax and building-owner assessments. Garden maintenance of ₹1,200 per month shall be paid by the Tenant. The Tenant must provide copies of utility payment receipts on reasonable request.",
+          "page": 2
+        },
+        {
+          "index": 10,
+          "title": "REPAIRS",
+          "text": "9. REPAIRS\n\nThe Landlord shall arrange structural repairs and repairs to concealed plumbing and fixed electrical systems not damaged by the Tenant. The Tenant shall maintain cleanliness, avoid overloading electrical outlets, and promptly report leaks or pests. Costs arising from the Tenant's misuse or negligence are the Tenant's responsibility after reasonable supporting documentation is provided.",
+          "page": 2
+        },
+        {
+          "index": 4,
+          "title": "RENT AND PAYMENT",
+          "text": "3. RENT AND PAYMENT\n\nMonthly rent is ₹30,000, payable on or before the fifth day of each month. Payment shall be made electronically to the bank account designated by the Landlord. Rent is payable for the entire period of occupation, subject to any written adjustment or applicable legal requirement.",
+          "page": 1
+        }
+      ]
+    },
+    "deposit_refund_time": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nThe Tenant shall pay ₹90,000, equal to three months of rent, as an interest-free refundable security deposit. The deposit may cover unpaid rent, unpaid utilities, missing keys, and damage beyond normal wear and tear. The Landlord shall not charge for ordinary deterioration caused by normal residential use.",
+          "page": 1
+        },
+        {
+          "index": 3,
+          "title": "INITIAL TERM",
+          "text": "2. INITIAL TERM\n\nThe initial term starts on 1 October 2026 and ends on 30 September 2027. Possession begins after payment of the first month's rent and security deposit. The Tenant shall notify the Landlord promptly of any condition that threatens safety or could cause significant damage.",
+          "page": 1
+        },
+        {
+          "index": 11,
+          "title": "LANDLORD ACCESS",
+          "text": "10. LANDLORD ACCESS\n\nThe Landlord may enter after twenty-four hours' notice for inspection, maintenance, or to show the Premises to prospective tenants during the final three months of a term. Entry without notice is limited to a genuine emergency. Visits must occur at reasonable times and should minimise disruption.",
+          "page": 2
+        }
+      ]
+    },
+    "auto_renewal": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "At the end of the initial term, this Agreement automatically renews for successive twelve-month periods unless the Landlord gives written notice of non-renewal at least ninety days before the end of the current term.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 6,
+          "title": "AUTOMATIC RENEWAL",
+          "text": "5. AUTOMATIC RENEWAL\n\nAt the end of the initial term, this Agreement automatically renews for successive twelve-month periods unless the Landlord gives written notice of non-renewal at least ninety days before the end of the current term. This clause does not expressly provide the Tenant with a corresponding right to opt out of automatic renewal. The Parties should review this asymmetry before signing; the clause is intentionally included as a risk-detection test case.",
+          "page": 1
+        },
+        {
+          "index": 7,
+          "title": "NOTICE AND EARLY EXIT",
+          "text": "6. NOTICE AND EARLY EXIT\n\nThe Tenant may request early termination by giving sixty days' written notice, but Clause 5 states that automatic renewal occurs unless the Landlord gives timely non-renewal notice. The Agreement does not expressly state whether a Tenant's early-termination notice prevents a future automatic renewal. The Landlord may seek termination for material breach after written notice and subject to applicable law. This drafting gap is intentional for evaluation.",
+          "page": 1
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL RENTAL AGREEMENT",
+          "text": "RESIDENTIAL RENTAL AGREEMENT\n\nAgreement 04 - Automatic renewal and missing opt-out test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "late_fee": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 14,
+          "title": "DEFAULT",
+          "text": "13. DEFAULT\n\nA Party alleging a material breach shall provide written notice and a reasonable opportunity to remedy the breach where appropriate. Rent unpaid for more than ten days after written demand is a material breach. Nothing in this Agreement permits unlawful self-help eviction or overrides mandatory tenant protections.",
+          "page": 2
+        },
+        {
+          "index": 7,
+          "title": "NOTICE AND EARLY EXIT",
+          "text": "6. NOTICE AND EARLY EXIT\n\nThe Tenant may request early termination by giving sixty days' written notice, but Clause 5 states that automatic renewal occurs unless the Landlord gives timely non-renewal notice. The Agreement does not expressly state whether a Tenant's early-termination notice prevents a future automatic renewal. The Landlord may seek termination for material breach after written notice and subject to applicable law. This drafting gap is intentional for evaluation.",
+          "page": 1
+        },
+        {
+          "index": 6,
+          "title": "AUTOMATIC RENEWAL",
+          "text": "5. AUTOMATIC RENEWAL\n\nAt the end of the initial term, this Agreement automatically renews for successive twelve-month periods unless the Landlord gives written notice of non-renewal at least ninety days before the end of the current term. This clause does not expressly provide the Tenant with a corresponding right to opt out of automatic renewal. The Parties should review this asymmetry before signing; the clause is intentionally included as a risk-detection test case.",
+          "page": 1
+        }
+      ]
+    }
+  },
+  "lease_05": {
+    "agreement_type": {
+      "fact": {
+        "status": "found",
+        "answer": "rent",
+        "line": "RESIDENTIAL RENTAL AGREEMENT",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 0,
+          "title": "RESIDENTIAL RENTAL AGREEMENT",
+          "text": "RESIDENTIAL RENTAL AGREEMENT\n\nAgreement 05 - Missing terms, penalties, and conditional escalation test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        },
+        {
+          "index": 9,
+          "title": "EARLY DEPARTURE",
+          "text": "8. EARLY DEPARTURE\n\nIf the Tenant leaves before the end of the term without written agreement, the Landlord may claim reasonable documented losses permitted by applicable law. The Agreement does not state a fixed early-termination penalty or specify that all remaining rent automatically becomes payable. Any amount claimed must be explained and supported.",
+          "page": 2
+        },
+        {
+          "index": 4,
+          "title": "MONTHLY RENT",
+          "text": "3. MONTHLY RENT\n\nMonthly rent is ₹22,000, payable in advance on or before the tenth day of each month. Payment shall be made by electronic transfer or another method agreed in writing. The Agreement does not specify a late-payment fee or a fixed grace period. Any demand for unpaid rent must identify the amount and period concerned.",
+          "page": 1
+        }
+      ]
+    },
+    "monthly_rent": {
+      "fact": {
+        "status": "found",
+        "answer": 22000,
+        "line": "Monthly rent is ₹22,000, payable in advance on or before the tenth day of each month.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 4,
+          "title": "MONTHLY RENT",
+          "text": "3. MONTHLY RENT\n\nMonthly rent is ₹22,000, payable in advance on or before the tenth day of each month. Payment shall be made by electronic transfer or another method agreed in writing. The Agreement does not specify a late-payment fee or a fixed grace period. Any demand for unpaid rent must identify the amount and period concerned.",
+          "page": 1
+        },
+        {
+          "index": 7,
+          "title": "RENT ESCALATION",
+          "text": "6. RENT ESCALATION\n\nThe monthly rent may increase by five percent if the building's annual maintenance costs rise by more than ten percent, provided the Landlord gives the Tenant copies of the relevant society records. The clause does not specify a fixed date on which the increase takes effect. If the maintenance-cost condition is not met, this clause does not itself authorise an increase. Any separate increase must be agreed in writing.",
+          "page": 1
+        },
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nThe Tenant shall pay a refundable security deposit of ₹66,000, equal to three months of the stated monthly rent. The deposit is held as security for unpaid rent, utility bills, missing keys, and damage beyond reasonable wear and tear. The deposit is not to be treated as rent for the final month unless the Parties agree in writing.",
+          "page": 1
+        }
+      ]
+    },
+    "security_deposit": {
+      "fact": {
+        "status": "found",
+        "answer": 66000,
+        "line": "The Tenant shall pay a refundable security deposit of ₹66,000, equal to three months of the stated monthly rent.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nThe Tenant shall pay a refundable security deposit of ₹66,000, equal to three months of the stated monthly rent. The deposit is held as security for unpaid rent, utility bills, missing keys, and damage beyond reasonable wear and tear. The deposit is not to be treated as rent for the final month unless the Parties agree in writing.",
+          "page": 1
+        },
+        {
+          "index": 6,
+          "title": "DEPOSIT RETURN",
+          "text": "5. DEPOSIT RETURN\n\nThe Landlord shall return the undisputed deposit balance after the Tenant vacates, returns all keys, and settles outstanding charges. The Parties agree to complete a joint inspection within seven days of handover where practicable. The Agreement does not state a fixed number of days within which the deposit must be refunded. Deductions should be itemised and should not include normal wear and tear.",
+          "page": 1
+        },
+        {
+          "index": 11,
+          "title": "MAINTENANCE",
+          "text": "10. MAINTENANCE\n\nThe Landlord is responsible for structural repairs and major defects in concealed plumbing or fixed electrical wiring not caused by the Tenant. The Tenant shall keep the Premises clean, report leaks and defects promptly, and pay for damage caused by misuse or negligence. The Agreement does not specify a fixed monthly maintenance payment or identify who pays any separate society maintenance bill; the Parties should clarify this in writing.",
+          "page": 2
+        }
+      ]
+    },
+    "total_length": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "amount": 12,
+          "unit": "months"
+        },
+        "line": "The tenancy commences on 1 November 2026 and ends on 31 October 2027.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy commences on 1 November 2026 and ends on 31 October 2027. Renewal requires written agreement. No automatic renewal term is specified. The Tenant shall return vacant possession at the end of the term unless the Parties sign a renewal or applicable law provides otherwise.",
+          "page": 1
+        },
+        {
+          "index": 8,
+          "title": "TERMINATION",
+          "text": "7. TERMINATION\n\nEither Party may request termination by written notice. The Parties shall discuss a reasonable notice period in good faith, but this Agreement does not specify a fixed number of days of notice for either the Tenant or the Landlord. A request to terminate does not remove obligations already accrued. Termination and recovery of possession remain subject to applicable law.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "DISPUTES AND GENERAL TERMS",
+          "text": "15. DISPUTES AND GENERAL TERMS\n\nThe Parties shall attempt to resolve disputes through written communication before approaching a competent forum. This Agreement is governed by applicable Indian law and relevant state requirements. Any amendment must be in writing and signed by both Parties. If a term is missing or unclear, the Parties should document a mutually agreed clarification rather than assume a term that is not stated.",
+          "page": 2
+        }
+      ]
+    },
+    "lock_in": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy commences on 1 November 2026 and ends on 31 October 2027. Renewal requires written agreement. No automatic renewal term is specified. The Tenant shall return vacant possession at the end of the term unless the Parties sign a renewal or applicable law provides otherwise.",
+          "page": 1
+        },
+        {
+          "index": 16,
+          "title": "DISPUTES AND GENERAL TERMS",
+          "text": "15. DISPUTES AND GENERAL TERMS\n\nThe Parties shall attempt to resolve disputes through written communication before approaching a competent forum. This Agreement is governed by applicable Indian law and relevant state requirements. Any amendment must be in writing and signed by both Parties. If a term is missing or unclear, the Parties should document a mutually agreed clarification rather than assume a term that is not stated.",
+          "page": 2
+        },
+        {
+          "index": 9,
+          "title": "EARLY DEPARTURE",
+          "text": "8. EARLY DEPARTURE\n\nIf the Tenant leaves before the end of the term without written agreement, the Landlord may claim reasonable documented losses permitted by applicable law. The Agreement does not state a fixed early-termination penalty or specify that all remaining rent automatically becomes payable. Any amount claimed must be explained and supported.",
+          "page": 2
+        }
+      ]
+    },
+    "lock_in_applies_to": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 14,
+          "title": "SUBLETTING AND OCCUPANTS",
+          "text": "13. SUBLETTING AND OCCUPANTS\n\nThe Tenant shall not assign or sublet the Premises without the Landlord's prior written consent. Temporary guests are allowed, provided their stay does not breach society rules or materially disturb neighbours. The Agreement does not set a maximum number of guest nights. Permanent changes to occupancy should be disclosed to the Landlord.",
+          "page": 2
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy commences on 1 November 2026 and ends on 31 October 2027. Renewal requires written agreement. No automatic renewal term is specified. The Tenant shall return vacant possession at the end of the term unless the Parties sign a renewal or applicable law provides otherwise.",
+          "page": 1
+        },
+        {
+          "index": 9,
+          "title": "EARLY DEPARTURE",
+          "text": "8. EARLY DEPARTURE\n\nIf the Tenant leaves before the end of the term without written agreement, the Landlord may claim reasonable documented losses permitted by applicable law. The Agreement does not state a fixed early-termination penalty or specify that all remaining rent automatically becomes payable. Any amount claimed must be explained and supported.",
+          "page": 2
+        }
+      ]
+    },
+    "tenant_notice": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 8,
+          "title": "TERMINATION",
+          "text": "7. TERMINATION\n\nEither Party may request termination by written notice. The Parties shall discuss a reasonable notice period in good faith, but this Agreement does not specify a fixed number of days of notice for either the Tenant or the Landlord. A request to terminate does not remove obligations already accrued. Termination and recovery of possession remain subject to applicable law.",
+          "page": 1
+        },
+        {
+          "index": 9,
+          "title": "EARLY DEPARTURE",
+          "text": "8. EARLY DEPARTURE\n\nIf the Tenant leaves before the end of the term without written agreement, the Landlord may claim reasonable documented losses permitted by applicable law. The Agreement does not state a fixed early-termination penalty or specify that all remaining rent automatically becomes payable. Any amount claimed must be explained and supported.",
+          "page": 2
+        },
+        {
+          "index": 6,
+          "title": "DEPOSIT RETURN",
+          "text": "5. DEPOSIT RETURN\n\nThe Landlord shall return the undisputed deposit balance after the Tenant vacates, returns all keys, and settles outstanding charges. The Parties agree to complete a joint inspection within seven days of handover where practicable. The Agreement does not state a fixed number of days within which the deposit must be refunded. Deductions should be itemised and should not include normal wear and tear.",
+          "page": 1
+        }
+      ]
+    },
+    "landlord_notice": {
+      "fact": {
+        "status": "not_stated",
+        "answer": null,
+        "line": null,
+        "page": null
+      },
+      "quote_check": "not_applicable",
+      "retrieved": [
+        {
+          "index": 8,
+          "title": "TERMINATION",
+          "text": "7. TERMINATION\n\nEither Party may request termination by written notice. The Parties shall discuss a reasonable notice period in good faith, but this Agreement does not specify a fixed number of days of notice for either the Tenant or the Landlord. A request to terminate does not remove obligations already accrued. Termination and recovery of possession remain subject to applicable law.",
+          "page": 1
+        },
+        {
+          "index": 9,
+          "title": "EARLY DEPARTURE",
+          "text": "8. EARLY DEPARTURE\n\nIf the Tenant leaves before the end of the term without written agreement, the Landlord may claim reasonable documented losses permitted by applicable law. The Agreement does not state a fixed early-termination penalty or specify that all remaining rent automatically becomes payable. Any amount claimed must be explained and supported.",
+          "page": 2
+        },
+        {
+          "index": 6,
+          "title": "DEPOSIT RETURN",
+          "text": "5. DEPOSIT RETURN\n\nThe Landlord shall return the undisputed deposit balance after the Tenant vacates, returns all keys, and settles outstanding charges. The Parties agree to complete a joint inspection within seven days of handover where practicable. The Agreement does not state a fixed number of days within which the deposit must be refunded. Deductions should be itemised and should not include normal wear and tear.",
+          "page": 1
+        }
+      ]
+    },
+    "tenant_can_leave_early": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "Either Party may request termination by written notice.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 9,
+          "title": "EARLY DEPARTURE",
+          "text": "8. EARLY DEPARTURE\n\nIf the Tenant leaves before the end of the term without written agreement, the Landlord may claim reasonable documented losses permitted by applicable law. The Agreement does not state a fixed early-termination penalty or specify that all remaining rent automatically becomes payable. Any amount claimed must be explained and supported.",
+          "page": 2
+        },
+        {
+          "index": 8,
+          "title": "TERMINATION",
+          "text": "7. TERMINATION\n\nEither Party may request termination by written notice. The Parties shall discuss a reasonable notice period in good faith, but this Agreement does not specify a fixed number of days of notice for either the Tenant or the Landlord. A request to terminate does not remove obligations already accrued. Termination and recovery of possession remain subject to applicable law.",
+          "page": 1
+        },
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy commences on 1 November 2026 and ends on 31 October 2027. Renewal requires written agreement. No automatic renewal term is specified. The Tenant shall return vacant possession at the end of the term unless the Parties sign a renewal or applicable law provides otherwise.",
+          "page": 1
+        }
+      ]
+    },
+    "landlord_can_end_early": {
+      "fact": {
+        "status": "found",
+        "answer": true,
+        "line": "Either Party may request termination by written notice.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 8,
+          "title": "TERMINATION",
+          "text": "7. TERMINATION\n\nEither Party may request termination by written notice. The Parties shall discuss a reasonable notice period in good faith, but this Agreement does not specify a fixed number of days of notice for either the Tenant or the Landlord. A request to terminate does not remove obligations already accrued. Termination and recovery of possession remain subject to applicable law.",
+          "page": 1
+        },
+        {
+          "index": 9,
+          "title": "EARLY DEPARTURE",
+          "text": "8. EARLY DEPARTURE\n\nIf the Tenant leaves before the end of the term without written agreement, the Landlord may claim reasonable documented losses permitted by applicable law. The Agreement does not state a fixed early-termination penalty or specify that all remaining rent automatically becomes payable. Any amount claimed must be explained and supported.",
+          "page": 2
+        },
+        {
+          "index": 10,
+          "title": "LATE PAYMENT AND OTHER PENALTIES",
+          "text": "9. LATE PAYMENT AND OTHER PENALTIES\n\nIf rent is delayed, the Landlord may send a written reminder and request prompt payment. No specific daily or monthly late fee is stated. If the Tenant causes damage through negligence, the Landlord may seek the reasonable repair cost supported by an invoice or other evidence. No separate penalty amount is specified for noise, guests, or breach of building rules.",
+          "page": 2
+        }
+      ]
+    },
+    "rent_increase": {
+      "fact": {
+        "status": "found",
+        "answer": {
+          "percent": 5.0,
+          "when": "conditional"
+        },
+        "line": "The monthly rent may increase by five percent if the building's annual maintenance costs rise by more than ten percent, provided the Landlord gives the Tenant copies of the relevant society records.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 7,
+          "title": "RENT ESCALATION",
+          "text": "6. RENT ESCALATION\n\nThe monthly rent may increase by five percent if the building's annual maintenance costs rise by more than ten percent, provided the Landlord gives the Tenant copies of the relevant society records. The clause does not specify a fixed date on which the increase takes effect. If the maintenance-cost condition is not met, this clause does not itself authorise an increase. Any separate increase must be agreed in writing.",
+          "page": 1
+        },
+        {
+          "index": 4,
+          "title": "MONTHLY RENT",
+          "text": "3. MONTHLY RENT\n\nMonthly rent is ₹22,000, payable in advance on or before the tenth day of each month. Payment shall be made by electronic transfer or another method agreed in writing. The Agreement does not specify a late-payment fee or a fixed grace period. Any demand for unpaid rent must identify the amount and period concerned.",
+          "page": 1
+        },
+        {
+          "index": 14,
+          "title": "SUBLETTING AND OCCUPANTS",
+          "text": "13. SUBLETTING AND OCCUPANTS\n\nThe Tenant shall not assign or sublet the Premises without the Landlord's prior written consent. Temporary guests are allowed, provided their stay does not breach society rules or materially disturb neighbours. The Agreement does not set a maximum number of guest nights. Permanent changes to occupancy should be disclosed to the Landlord.",
+          "page": 2
+        }
+      ]
+    },
+    "maintenance": {
+      "fact": {
+        "status": "unclear",
+        "answer": null,
+        "line": "The Agreement does not specify a fixed monthly maintenance payment or identify who pays any separate society maintenance bill; the Parties should clarify this in writing.",
+        "page": 2
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 11,
+          "title": "MAINTENANCE",
+          "text": "10. MAINTENANCE\n\nThe Landlord is responsible for structural repairs and major defects in concealed plumbing or fixed electrical wiring not caused by the Tenant. The Tenant shall keep the Premises clean, report leaks and defects promptly, and pay for damage caused by misuse or negligence. The Agreement does not specify a fixed monthly maintenance payment or identify who pays any separate society maintenance bill; the Parties should clarify this in writing.",
+          "page": 2
+        },
+        {
+          "index": 12,
+          "title": "UTILITIES",
+          "text": "11. UTILITIES\n\nThe Tenant shall pay electricity and piped gas charges for the period of occupation. The Parties will review water charges against the building bill. The Agreement does not expressly allocate internet costs or identify a fixed amount for water. The Landlord shall pay property tax unless a mandatory legal provision requires otherwise.",
+          "page": 2
+        },
+        {
+          "index": 13,
+          "title": "INSPECTION AND REPAIRS",
+          "text": "12. INSPECTION AND REPAIRS\n\nThe Landlord may request access for repairs or inspection after giving reasonable advance notice and arranging a mutually convenient time. Immediate access may be requested where there is an emergency involving safety or serious property damage. The Tenant shall not unreasonably obstruct necessary repairs, and the Landlord shall respect the Tenant's privacy.",
+          "page": 2
+        }
+      ]
+    },
+    "deposit_refund_time": {
+      "fact": {
+        "status": "unclear",
+        "answer": null,
+        "line": "The Agreement does not state a fixed number of days within which the deposit must be refunded.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 6,
+          "title": "DEPOSIT RETURN",
+          "text": "5. DEPOSIT RETURN\n\nThe Landlord shall return the undisputed deposit balance after the Tenant vacates, returns all keys, and settles outstanding charges. The Parties agree to complete a joint inspection within seven days of handover where practicable. The Agreement does not state a fixed number of days within which the deposit must be refunded. Deductions should be itemised and should not include normal wear and tear.",
+          "page": 1
+        },
+        {
+          "index": 5,
+          "title": "SECURITY DEPOSIT",
+          "text": "4. SECURITY DEPOSIT\n\nThe Tenant shall pay a refundable security deposit of ₹66,000, equal to three months of the stated monthly rent. The deposit is held as security for unpaid rent, utility bills, missing keys, and damage beyond reasonable wear and tear. The deposit is not to be treated as rent for the final month unless the Parties agree in writing.",
+          "page": 1
+        },
+        {
+          "index": 8,
+          "title": "TERMINATION",
+          "text": "7. TERMINATION\n\nEither Party may request termination by written notice. The Parties shall discuss a reasonable notice period in good faith, but this Agreement does not specify a fixed number of days of notice for either the Tenant or the Landlord. A request to terminate does not remove obligations already accrued. Termination and recovery of possession remain subject to applicable law.",
+          "page": 1
+        }
+      ]
+    },
+    "auto_renewal": {
+      "fact": {
+        "status": "found",
+        "answer": false,
+        "line": "No automatic renewal term is specified.",
+        "page": 1
+      },
+      "quote_check": "verified",
+      "retrieved": [
+        {
+          "index": 3,
+          "title": "TERM",
+          "text": "2. TERM\n\nThe tenancy commences on 1 November 2026 and ends on 31 October 2027. Renewal requires written agreement. No automatic renewal term is specified. The Tenant shall return vacant possession at the end of the term unless the Parties sign a renewal or applicable law provides otherwise.",
+          "page": 1
+        },
+        {
+          "index": 8,
+          "title": "TERMINATION",
+          "text": "7. TERMINATION\n\nEither Party may request termination by written notice. The Parties shall discuss a reasonable notice period in good faith, but this Agreement does not specify a fixed number of days of notice for either the Tenant or the Landlord. A request to terminate does not remove obligations already accrued. Termination and recovery of possession remain subject to applicable law.",
+          "page": 1
+        },
+        {
+          "index": 0,
+          "title": "RESIDENTIAL RENTAL AGREEMENT",
+          "text": "RESIDENTIAL RENTAL AGREEMENT\n\nAgreement 05 - Missing terms, penalties, and conditional escalation test case\n\nTEST DATA NOTICE: This is a fictional synthetic agreement created solely for testing ClauseLens. It is not legal advice and must not be signed or used as a real contract.",
+          "page": 1
+        }
+      ]
+    },
+    "late_fee": {
+      "error": "Extraction failed for field 'late_fee' after one repair attempt."
+    }
+  }
+}
