@@ -1,5 +1,4 @@
-
-"""Comparison rules for scoring extraction against gold (Day 5, Step 6)."""
+##checks the output of gemini with gold data 
 
 from clauselens.ingest.parser import normalize
 
