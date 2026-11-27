@@ -235,9 +235,61 @@ Known gaps:
 
 Build days used: 5 of 13 (Day 5 took 6 calendar days, 2026-11-20 → 2026-11-25)
 
-## Remaining Days
+## Day 6 — DONE (2026-11-25 → 2026-11-27): Classifier, Risk Checks, Human Review
 
-Day 6 — Lease classifier, risk checks and human review.
+Built:
+- `src/clauselens/classify/classifier.py` — `classify_document()`:
+  - Sends the first 3000 characters of page 1 to Gemini through the existing router
+  - Response schema `DocClassification`: `doc_type` (residential_lease / other_contract / not_a_contract) + one-sentence `reason`
+  - Pydantic rejects any `doc_type` outside the three allowed values
+- `src/clauselens/risk/rules.py` — deterministic risk rules over extracted facts (no LLM):
+  - `long_lock_in` (medium): lock-in over 180 days
+  - `notice_imbalance` (medium): tenant notice longer than landlord notice
+  - `high_deposit` (high): deposit over 3× monthly rent
+  - `steep_rent_increase` (medium): rent increase over 10%
+  - `unclear_exit_terms`: deposit refund time not found (medium); landlord can end early (low)
+  - Rules only use facts with status `found`; durations reuse `DAYS_PER_UNIT` from scoring
+  - Each flag carries the evidence line and page from the fact it came from
+  - `check_risks()` runs all rules and returns one list
+- `src/clauselens/risk/review.py` — `needs_review()` sends a field to human review when: extraction errored, status is unclear, or the quote check was wrong_page / not_found
+- `scripts/try_classifier.py` — classifies lease_01 with real Gemini
+- `scripts/try_risk.py` — runs the risk rules on the saved run-1 facts (no API calls)
+- Tests: `test_classifier.py` (2, fake router), `test_rules.py` (16), `test_review.py` (6)
+
+Test results:
+- 104 passed, 21 warnings (deprecation notices from Docling/Pydantic dependencies); `uv run pytest -q`
+- New this day: 24 tests (classifier 2, risk rules 16, review 6)
+
+Risk flags on run-1 facts (`scripts/try_risk.py`):
+
+| Lease | Flags |
+|---|---|
+| lease_01 | landlord_early_termination (low) |
+| lease_02 | long_lock_in (medium), high_deposit (high), landlord_early_termination (low) |
+| lease_03 | none |
+| lease_04 | missing_deposit_refund_time (medium), landlord_early_termination (low) |
+| lease_05 | missing_deposit_refund_time (medium), landlord_early_termination (low) |
+
+Found:
+- lease_04 landlord_early_termination is a false flag: it comes from the Day 5 extraction miss (gold false, predicted true). Rules are only as good as the facts they read.
+- lease_03 gets no landlord_early_termination flag because extraction said unclear; review catches it instead of the rules
+- Missing deposit-refund flags have no evidence line or page, because they are about something the lease does not say
+
+Decisions:
+- Risk checks are plain Python rules with fixed thresholds, not LLM judgments: same facts always give the same flags, and every flag points to a quoted line
+- Thresholds (180 days, 3× rent, 10%) are set by hand as reasonable defaults, not legal limits
+- Rules skip anything not `found`; unsure answers go to human review instead of being guessed at
+- Classifier reads only the start of page 1 to keep calls small
+
+Known gaps:
+- Classifier has not been measured: no set of non-lease documents to test it against yet; only checked by hand on lease_01
+- Risk rules are not scored against hand-checked flags; the table above is a read-through, not an accuracy number
+- A stray empty folder `src/clauselens/classify.py/` exists next to `classify/` and should be removed
+- `needs_review()` can list the same field twice (for example unclear and quote not verified)
+
+Build days used: 6 of 13
+
+## Remaining Days
 
 Day 7 — Question answering with clause citations and backend API.
 
@@ -251,4 +303,4 @@ Days 11–13 — Buffer, catch-up and lease comparison.
 
 ---
 
-**Current milestone:** PDF ingestion, Gemini Router, clause retrieval (Hit@3 = 100%) and structured fact extraction with quote verification (status 94.67%, answer 96.30%, 0 fabricated quotes on 5 synthetic leases) are complete. Next is Day 6: lease classifier, risk checks and human review.
+**Current milestone:** PDF ingestion, Gemini Router, clause retrieval (Hit@3 = 100%), structured fact extraction with quote verification (status 94.67%, answer 96.30%, 0 fabricated quotes on 5 synthetic leases), lease classifier, rule-based risk checks and human-review flagging are complete. Next is Day 7: question answering with clause citations and backend API.

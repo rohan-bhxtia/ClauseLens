@@ -8,7 +8,7 @@ Upload an Indian rental agreement (PDF). ClauseLens extracts key terms (rent, de
 
 ## Status
 
-🚧 In progress. **Day 5 of 10 done. Day 6 is next.**
+🚧 In progress. **Day 6 of 10 done. Day 7 is next.**
 
 Working so far:
 - 15 key lease questions defined, with hand-checked answers for 5 test leases
@@ -24,11 +24,14 @@ Working so far:
 - Structured fact extraction: Gemini returns a typed fact (status, answer, quoted line, page) validated by Pydantic, with one repair retry
 - Source-quote verification: every quote is checked against the cited PDF page
 - First extraction result on 5 synthetic leases (75 pairs): status 94.67%, answer 96.30%, 57/57 quotes verified, 1 extraction error. Not a general accuracy.
+- Lease classifier: Gemini labels a document as residential lease, other contract or not a contract, with a one-line reason
+- Risk checks: fixed rules flag long lock-in, unequal notice periods, high deposit, steep rent increase and unclear exit terms, each with the quoted line and page
+- Human review: answers that errored, came back unclear or failed the quote check are listed for a person to check
 
 ## Next
 
-- Lease classifier (is this a lease?), risk checks and human review of unsure answers
 - Question answering with clause citations and a backend API
+- One-command accuracy report, safety tests and personal-data protection
 
 Day-by-day log: [PROGRESS.md](PROGRESS.md)
 
