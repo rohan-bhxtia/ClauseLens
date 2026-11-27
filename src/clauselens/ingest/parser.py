@@ -14,7 +14,9 @@ def clean_text(text: str) -> str:
     text = text.replace(r"\_", "_")
 
     return text
-##hey
+
+
+## this part is for blocks making
 def parse_pdf(path:str) -> list[Block_format]:
 
     doc = DocumentConverter().convert(path).document
